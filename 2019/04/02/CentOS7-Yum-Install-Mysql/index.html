@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>CentOS7下用Yum安装Mysql指定版本 | Smart Testing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="安装Mysql先卸载MariaDB数据库由于Centos7默认会安装MariaDB、我们需要Mysql、所以需要先卸载MariaDB。  查询一下MariaDB是否安装 yum list installed | grep mariadb  全部卸载MariaDB yum -y remove mariadb*  下载Mysql5.7 最新版本从Mysql官网下载Mysql源 wget -P &#x2F;hom">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS7下用Yum安装Mysql指定版本">
+<meta property="og:url" content="http://huaisha1224.github.io/2019/04/02/CentOS7-Yum-Install-Mysql/index.html">
+<meta property="og:site_name" content="Smart Testing">
+<meta property="og:description" content="安装Mysql先卸载MariaDB数据库由于Centos7默认会安装MariaDB、我们需要Mysql、所以需要先卸载MariaDB。  查询一下MariaDB是否安装 yum list installed | grep mariadb  全部卸载MariaDB yum -y remove mariadb*  下载Mysql5.7 最新版本从Mysql官网下载Mysql源 wget -P &#x2F;hom">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-04-02T08:15:54.000Z">
+<meta property="article:modified_time" content="2019-04-02T10:30:43.000Z">
+<meta property="article:author" content="Huaisha1224">
+<meta property="article:tag" content="MYSQL">
+<meta property="article:tag" content="CentOS">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Smart Testing" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Smart Testing</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://huaisha1224.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-CentOS7-Yum-Install-Mysql" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2019/04/02/CentOS7-Yum-Install-Mysql/" class="article-date">
+  <time class="dt-published" datetime="2019-04-02T08:15:54.000Z" itemprop="datePublished">2019-04-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      CentOS7下用Yum安装Mysql指定版本
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="安装Mysql"><a href="#安装Mysql" class="headerlink" title="安装Mysql"></a>安装Mysql</h3><h4 id="先卸载MariaDB数据库"><a href="#先卸载MariaDB数据库" class="headerlink" title="先卸载MariaDB数据库"></a>先卸载MariaDB数据库</h4><pre><code>由于Centos7默认会安装MariaDB、我们需要Mysql、所以需要先卸载MariaDB。
+</code></pre>
+<p>查询一下MariaDB是否安装</p>
+<pre><code>yum list installed | grep mariadb
+</code></pre>
+<p>全部卸载MariaDB</p>
+<pre><code>yum -y remove mariadb*
+</code></pre>
+<h4 id="下载Mysql5-7-最新版本"><a href="#下载Mysql5-7-最新版本" class="headerlink" title="下载Mysql5.7 最新版本"></a>下载Mysql5.7 最新版本</h4><p>从Mysql官网下载Mysql源</p>
+<pre><code>wget -P /home/tools http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+</code></pre>
+<p>安装mysql源</p>
+<pre><code>rpm -Uvh mysql57-community-release-el7-11.noarch.rpm
+</code></pre>
+<p>添加配置；<code>vim /etc/yum.repos.d/mysql-community.repo</code></p>
+<pre><code>[mysql57-community]
+name=MySQL 5.7 Community Server
+baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/7/$basearch/
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+</code></pre>
+<p>然后就可以安装 mysql5.7版本啦</p>
+<pre><code>yum install mysql-community-server -y
+</code></pre>
+<h4 id="安装完成"><a href="#安装完成" class="headerlink" title="安装完成"></a>安装完成</h4><p>如果看到下面这样的信息、就说明安装成功啦、进入下一步；</p>
+<pre><code>已安装:
+  mysql-community-server.x86_64 0:5.7.25-1.el7                                            
+
+作为依赖被安装:
+  mysql-community-client.x86_64 0:5.7.25-1.el7
+  mysql-community-common.x86_64 0:5.7.25-1.el7
+  mysql-community-libs.x86_64 0:5.7.25-1.el7
+
+完毕！
+</code></pre>
+<h3 id="配置一下启动MYSQL"><a href="#配置一下启动MYSQL" class="headerlink" title="配置一下启动MYSQL"></a>配置一下启动MYSQL</h3><p>启动MYSQL</p>
+<pre><code>systemctl start mysqld.service
+</code></pre>
+<p>查看状态</p>
+<pre><code>systemctl status mysqld.service
+</code></pre>
+<p>添加开机启动 </p>
+<pre><code>systemctl enabled mysqld.service
+</code></pre>
+<h3 id="MYSQL-修改root用户密码"><a href="#MYSQL-修改root用户密码" class="headerlink" title="MYSQL 修改root用户密码"></a>MYSQL 修改root用户密码</h3><p>首先查看默认密码</p>
+<pre><code>grep &#39;password&#39; /var/log/mysqld.log
+</code></pre>
+<p>拿到默认密码之后登录mysql</p>
+<pre><code>mysql -u root -p 
+</code></pre>
+<p>修改密码</p>
+<pre><code>ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;Abcd#123&#39;;
+</code></pre>
+<h3 id="开启远程访问"><a href="#开启远程访问" class="headerlink" title="开启远程访问"></a>开启远程访问</h3><p>前面的步骤完成之后我们想在windows电脑上用Navicat来连接的时候、发现是连不上的；</p>
+<p>一般来说你的帐号不允许从远程登陆，这个时候只要在<code>localhost</code>的那台服务器，登入<code>mysql</code>，<br>更改 <code>mysql</code> 数据库里的 <code>user</code> 表里的 <code>host</code> 项，从<code>localhost</code>改称<code>%</code>就能远程访问了！</p>
+<pre><code>[root@localhost ~]# mysql -u root -p 
+mysql&gt;use mysql; 
+mysql&gt;update user set host = &#39;%&#39; where user = &#39;root&#39;; 
+mysql&gt;select host, user from user;
+mysql&gt;flush privileges;
+</code></pre>
+<p>到此 可以用你的<code>Navicat</code>等工具来远程连接MYSQL服务器啦</p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol>
+<li>如果提示<code>获取 GPG 密钥失败</code>; 请修改<code>gpgcheck=0</code>即可、也就是不检查了</li>
+<li>MYSQL的repo网站上可以下载你需要的所有版本的源、请自行选择即可</li>
+<li>如果打开<code>mysql-community.repo</code>的文件默认有内容、那么就直接修改、将你需要安装的版本下的<code>enabled=1</code>即可。</li>
+</ol>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/">MySQL官方安装指南</a></li>
+<li><a target="_blank" rel="noopener" href="http://repo.mysql.com/">Mysql源</a></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://huaisha1224.github.io/2019/04/02/CentOS7-Yum-Install-Mysql/" data-id="ckr4z8wsh0001ykoe87s4afng" data-title="CentOS7下用Yum安装Mysql指定版本" class="article-share-link">Teilen</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MYSQL/" rel="tag">MYSQL</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/04/19/%E7%94%A8Selenium%E7%BB%95%E8%BF%87%E5%8F%8D%E7%88%AC%E6%9C%BA%E5%88%B6%E7%99%BB%E5%BD%95%E7%9F%A5%E4%B9%8E/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          用Selenium绕过反爬机制登录知乎
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/02/13/VSCode-for-Python/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">配置VSCode舒心的写Python代码</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Kategorien</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Automation/">Automation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Selenium/">Selenium</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ShadowSocks/">ShadowSocks</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Sysinternals/">Sysinternals</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%84%9A%E6%9C%AC/">脚本</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%97%B2%E8%B0%88/">闲谈</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Automation/" rel="tag">Automation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chromium/" rel="tag">Chromium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dota2/" rel="tag">Dota2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MYSQL/" rel="tag">MYSQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Process-Explorer/" rel="tag">Process Explorer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ProcessMonitor/" rel="tag">ProcessMonitor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pubg/" rel="tag">Pubg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyAutoGUI/" rel="tag">PyAutoGUI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robot-Framework/" rel="tag">Robot Framework</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium/" rel="tag">Selenium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium-Grid/" rel="tag">Selenium-Grid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium-IDE/" rel="tag">Selenium-IDE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ShadowSocks/" rel="tag">ShadowSocks</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Steam/" rel="tag">Steam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TCPView/" rel="tag">TCPView</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Testing/" rel="tag">Testing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unittest/" rel="tag">Unittest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VBS/" rel="tag">VBS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VSCode/" rel="tag">VSCode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9D%90%E6%A0%87/" rel="tag">坐标</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/" rel="tag">提问的智慧</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E8%89%BA%E6%9C%AF/" rel="tag">提问的艺术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95/" rel="tag">获取工作目录</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Automation/" style="font-size: 17.5px;">Automation</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Chromium/" style="font-size: 10px;">Chromium</a> <a href="/tags/Dota2/" style="font-size: 10px;">Dota2</a> <a href="/tags/MYSQL/" style="font-size: 10px;">MYSQL</a> <a href="/tags/Process-Explorer/" style="font-size: 12.5px;">Process Explorer</a> <a href="/tags/ProcessMonitor/" style="font-size: 10px;">ProcessMonitor</a> <a href="/tags/Pubg/" style="font-size: 10px;">Pubg</a> <a href="/tags/PyAutoGUI/" style="font-size: 10px;">PyAutoGUI</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/Robot-Framework/" style="font-size: 10px;">Robot Framework</a> <a href="/tags/Selenium/" style="font-size: 20px;">Selenium</a> <a href="/tags/Selenium-Grid/" style="font-size: 10px;">Selenium-Grid</a> <a href="/tags/Selenium-IDE/" style="font-size: 10px;">Selenium-IDE</a> <a href="/tags/ShadowSocks/" style="font-size: 10px;">ShadowSocks</a> <a href="/tags/Steam/" style="font-size: 10px;">Steam</a> <a href="/tags/TCPView/" style="font-size: 10px;">TCPView</a> <a href="/tags/Testing/" style="font-size: 15px;">Testing</a> <a href="/tags/Unittest/" style="font-size: 10px;">Unittest</a> <a href="/tags/VBS/" style="font-size: 10px;">VBS</a> <a href="/tags/VSCode/" style="font-size: 10px;">VSCode</a> <a href="/tags/%E5%9D%90%E6%A0%87/" style="font-size: 10px;">坐标</a> <a href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/" style="font-size: 10px;">提问的智慧</a> <a href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E8%89%BA%E6%9C%AF/" style="font-size: 10px;">提问的艺术</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 10px;">爬虫</a> <a href="/tags/%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95/" style="font-size: 10px;">获取工作目录</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/07/15/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/02/Selenium-Grid/">Selenium Grid分布式测试</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/30/smart-questions/">提问的艺术</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/18/VBS%E8%84%9A%E6%9C%AC%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E7%9A%842%E7%A7%8D%E6%96%B9%E5%BC%8F/">VBS脚本获取工作目录的2种方式</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/04/Selenium-IDE/">Selenium IDE完整功能操作指引</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Huaisha1224<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

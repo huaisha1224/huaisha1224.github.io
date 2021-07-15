@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>用Selenium抓取Steam饰品价格 | Smart Testing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="用Selenium抓取Steam饰品价格最近想从Buff上爬取所有Pubg饰品的价格、但是Buff上的饰品价格都是动态加载、当然我们有很多办法来抓取动态数据、而Selenium就是其中一个非常简单可行的方案。 Selenium是一个自动化测试工具用浏览器官方提供的API接口来模拟操作浏览器；它支持各种主流浏览器(包括Chrome、Firefox、IE、Safari)； 所有人在浏览器上的行为都可以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Selenium抓取Steam饰品价格">
+<meta property="og:url" content="http://huaisha1224.github.io/2018/04/25/Selenium-Steam-SellingPrice/index.html">
+<meta property="og:site_name" content="Smart Testing">
+<meta property="og:description" content="用Selenium抓取Steam饰品价格最近想从Buff上爬取所有Pubg饰品的价格、但是Buff上的饰品价格都是动态加载、当然我们有很多办法来抓取动态数据、而Selenium就是其中一个非常简单可行的方案。 Selenium是一个自动化测试工具用浏览器官方提供的API接口来模拟操作浏览器；它支持各种主流浏览器(包括Chrome、Firefox、IE、Safari)； 所有人在浏览器上的行为都可以">
+<meta property="og:locale">
+<meta property="article:published_time" content="2018-04-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2018-04-25T09:03:49.000Z">
+<meta property="article:author" content="Huaisha1224">
+<meta property="article:tag" content="Selenium">
+<meta property="article:tag" content="Steam">
+<meta property="article:tag" content="Pubg">
+<meta property="article:tag" content="Dota2">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Smart Testing" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Smart Testing</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://huaisha1224.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Selenium-Steam-SellingPrice" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/04/25/Selenium-Steam-SellingPrice/" class="article-date">
+  <time class="dt-published" datetime="2018-04-24T16:00:00.000Z" itemprop="datePublished">2018-04-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Selenium/">Selenium</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      用Selenium抓取Steam饰品价格
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="用Selenium抓取Steam饰品价格"><a href="#用Selenium抓取Steam饰品价格" class="headerlink" title="用Selenium抓取Steam饰品价格"></a>用Selenium抓取Steam饰品价格</h2><p>最近想从Buff上爬取所有Pubg饰品的价格、但是Buff上的饰品价格都是动态加载、当然我们有很多办法来抓取动态数据、而Selenium就是其中一个非常简单可行的方案。</p>
+<h3 id="Selenium是一个自动化测试工具"><a href="#Selenium是一个自动化测试工具" class="headerlink" title="Selenium是一个自动化测试工具"></a>Selenium是一个自动化测试工具</h3><pre><code>用浏览器官方提供的API接口来模拟操作浏览器；它支持各种主流浏览器(包括Chrome、Firefox、IE、Safari)；
+所有人在浏览器上的行为都可以用Selenium来驱动浏览器操作完成
+所以我们也是可以用Selenium来爬取动态网站上的数据。
+</code></pre>
+<h3 id="用Selenium抓取网页内容步骤如下"><a href="#用Selenium抓取网页内容步骤如下" class="headerlink" title="用Selenium抓取网页内容步骤如下"></a>用Selenium抓取网页内容步骤如下</h3><pre><code>1、打开浏览器
+2、访问Url地址
+3、获取所需要的内容
+4、关闭浏览器
+</code></pre>
+<h3 id="最简单的实现代码"><a href="#最简单的实现代码" class="headerlink" title="最简单的实现代码"></a>最简单的实现代码</h3><pre><code>from selenium import webdriver
+import time
+
+#Buff上Pubg饰品价格
+for x in range(1,13):
+       url = (&#39;https://buff.163.com/market/?game=pubg#tab=selling&amp;page_num=%s&amp;sort_by=price.desc&#39; % x)
+    print(url)
+    driver = webdriver.Firefox()
+    driver.get(url)
+    try:
+        for i in range(1,21):
+            name = driver.find_element_by_xpath(
+                (&#39;//html/body/div[6]/div/div[4]/div[1]/ul/li[%s]/h3/a&#39;) % i)
+            money = driver.find_element_by_xpath(
+                (&#39;//html/body/div[6]/div/div[4]/div[1]/ul/li[%s]/p/strong&#39;) % i)
+            print(name.text,money.text)
+    except:
+        pass
+
+    driver.close()
+</code></pre>
+<p>上面这段代码我用<code>xpath</code>来定位并获取到Buff上的Pubg饰品名称和对应的价格；</p>
+<p>如果你仔细看这段代码的话、会发现、一共需要访问12个页面获取数据；也就是说需要打开12次浏览器并关闭！<br>这段代码运行完之后耗时120s左右；</p>
+<p>接下来我们想优化一下爬虫性能；能不能只打开一次浏览器；然后抓取完一个url之后不关闭浏览器的情况下访问下一个url地址；</p>
+<h3 id="修改之后的代码"><a href="#修改之后的代码" class="headerlink" title="修改之后的代码"></a>修改之后的代码</h3><pre><code>from selenium import webdriver
+import time
+
+#Buff上Pubg饰品价格
+driver = webdriver.Firefox()
+for x in range(1,13):
+    url = (&#39;https://buff.163.com/market/?game=pubg#tab=selling&amp;page_num=%s&amp;sort_by=price.desc&#39; % x)
+    print(url)
+    #driver = webdriver.Firefox()
+    driver.get(url)
+    try:
+        for i in range(1,21):
+            name = driver.find_element_by_xpath(
+                (&#39;//html/body/div[6]/div/div[4]/div[1]/ul/li[%s]/h3/a&#39;) % i)
+            money = driver.find_element_by_xpath(
+                (&#39;//html/body/div[6]/div/div[4]/div[1]/ul/li[%s]/p/strong&#39;) % i)
+            print(name.text,money.text)
+    except:
+        pass
+
+driver.close()
+</code></pre>
+<p>上面的代码只是简单的把打开浏览器的操作<code>driver = webdriver.Firefox()</code>提前到for循环之前;<br>这样的结果就是只打开一次浏览器、并且会逐一的访问url地址；<br>但是运行代码之后却发现、只获取到了第一页里面的数据；并且重复获取了12次第一页的数据。</p>
+<p>也就是说虽然在同一个浏览器窗口里面打开了不同的url地址、但是获取到的内容却一直是第一个url里面的数据。</p>
+<p>从现象分析之后可以确定、虽然我们在同一个浏览器窗口里面打开了url地址、但是却没有刷新页面内容、导致页面上一直显示的数据就是第一个url里面的数据。<br>知道了问题所在之后就好解决了。</p>
+<h3 id="最终的代码"><a href="#最终的代码" class="headerlink" title="最终的代码"></a>最终的代码</h3><pre><code>#!/usr/bin/env python
+#encoding = utf-8
+from selenium import webdriver
+import time
+
+#Buff上Pubg饰品价格
+driver = webdriver.Firefox()
+for x in range(1,13):
+    url = (&#39;https://buff.163.com/market/?game=pubg#tab=selling&amp;page_num=%s&amp;sort_by=price.desc&#39; % x)
+    print(url)
+    #driver = webdriver.Firefox()
+    driver.get(url)
+    driver.refresh()
+    try:
+        for i in range(1,21):
+            name = driver.find_element_by_xpath(
+            (&#39;//html/body/div[6]/div/div[4]/div[1]/ul/li[%s]/h3/a&#39;) % i)
+            money = driver.find_element_by_xpath(
+            (&#39;//html/body/div[6]/div/div[4]/div[1]/ul/li[%s]/p/strong&#39;) % i)
+            print(name.text,money.text)
+    except:
+        pass
+
+driver.close()
+</code></pre>
+<p>有没有发现我们只需要在<code>selenium</code>的<code>get(url)</code>方法后面调用一下<code>refresh()</code>来强制刷新下网页就可以完美的解决了我们上面遇到的问题。</p>
+<p>运行第一份代码；耗时120s、运行第三份代码耗时35s；我们只是稍微的修改了一下代码、性能提升超过3倍！</p>
+<p>抓取Steam的饰品价格Github地址:<a target="_blank" rel="noopener" href="https://github.com/huaisha1224/Steam-Market-SellingPrice">获取Steam饰品价格</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://huaisha1224.github.io/2018/04/25/Selenium-Steam-SellingPrice/" data-id="ckr4z8wst000hykoe2km84tim" data-title="用Selenium抓取Steam饰品价格" class="article-share-link">Teilen</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dota2/" rel="tag">Dota2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pubg/" rel="tag">Pubg</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Selenium/" rel="tag">Selenium</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Steam/" rel="tag">Steam</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/04/25/ShadowSocks-Client%E5%85%A5%E9%97%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          ShadowSocks-Client入门
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/01/04/Python-Automation-Package/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">Python下那些让人相见恨晚的自动化测试库</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Kategorien</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Automation/">Automation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Selenium/">Selenium</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ShadowSocks/">ShadowSocks</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Sysinternals/">Sysinternals</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%84%9A%E6%9C%AC/">脚本</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%97%B2%E8%B0%88/">闲谈</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Automation/" rel="tag">Automation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chromium/" rel="tag">Chromium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dota2/" rel="tag">Dota2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MYSQL/" rel="tag">MYSQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Process-Explorer/" rel="tag">Process Explorer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ProcessMonitor/" rel="tag">ProcessMonitor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pubg/" rel="tag">Pubg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyAutoGUI/" rel="tag">PyAutoGUI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robot-Framework/" rel="tag">Robot Framework</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium/" rel="tag">Selenium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium-Grid/" rel="tag">Selenium-Grid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium-IDE/" rel="tag">Selenium-IDE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ShadowSocks/" rel="tag">ShadowSocks</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Steam/" rel="tag">Steam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TCPView/" rel="tag">TCPView</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Testing/" rel="tag">Testing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unittest/" rel="tag">Unittest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VBS/" rel="tag">VBS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VSCode/" rel="tag">VSCode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9D%90%E6%A0%87/" rel="tag">坐标</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/" rel="tag">提问的智慧</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E8%89%BA%E6%9C%AF/" rel="tag">提问的艺术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95/" rel="tag">获取工作目录</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Automation/" style="font-size: 17.5px;">Automation</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Chromium/" style="font-size: 10px;">Chromium</a> <a href="/tags/Dota2/" style="font-size: 10px;">Dota2</a> <a href="/tags/MYSQL/" style="font-size: 10px;">MYSQL</a> <a href="/tags/Process-Explorer/" style="font-size: 12.5px;">Process Explorer</a> <a href="/tags/ProcessMonitor/" style="font-size: 10px;">ProcessMonitor</a> <a href="/tags/Pubg/" style="font-size: 10px;">Pubg</a> <a href="/tags/PyAutoGUI/" style="font-size: 10px;">PyAutoGUI</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/Robot-Framework/" style="font-size: 10px;">Robot Framework</a> <a href="/tags/Selenium/" style="font-size: 20px;">Selenium</a> <a href="/tags/Selenium-Grid/" style="font-size: 10px;">Selenium-Grid</a> <a href="/tags/Selenium-IDE/" style="font-size: 10px;">Selenium-IDE</a> <a href="/tags/ShadowSocks/" style="font-size: 10px;">ShadowSocks</a> <a href="/tags/Steam/" style="font-size: 10px;">Steam</a> <a href="/tags/TCPView/" style="font-size: 10px;">TCPView</a> <a href="/tags/Testing/" style="font-size: 15px;">Testing</a> <a href="/tags/Unittest/" style="font-size: 10px;">Unittest</a> <a href="/tags/VBS/" style="font-size: 10px;">VBS</a> <a href="/tags/VSCode/" style="font-size: 10px;">VSCode</a> <a href="/tags/%E5%9D%90%E6%A0%87/" style="font-size: 10px;">坐标</a> <a href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/" style="font-size: 10px;">提问的智慧</a> <a href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E8%89%BA%E6%9C%AF/" style="font-size: 10px;">提问的艺术</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 10px;">爬虫</a> <a href="/tags/%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95/" style="font-size: 10px;">获取工作目录</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/07/15/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/02/Selenium-Grid/">Selenium Grid分布式测试</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/30/smart-questions/">提问的艺术</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/18/VBS%E8%84%9A%E6%9C%AC%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E7%9A%842%E7%A7%8D%E6%96%B9%E5%BC%8F/">VBS脚本获取工作目录的2种方式</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/04/Selenium-IDE/">Selenium IDE完整功能操作指引</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Huaisha1224<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

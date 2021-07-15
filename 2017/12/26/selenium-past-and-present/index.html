@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Selenium的前世今生 | Smart Testing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Selenium的前世今生Selenium1.x的诞生2004年ThoughtWorks公司的一个测试工程师‘Jason Huggins’为了减少工作量、自己实现了基于JavaScript代码库；用这套代码库可以进行页面交互操作、并且可以重复的在不同浏览器上进行操作；Selenium1.0就诞生了。 selenium 1.0包括：selenium IDE、selenium Grid、seleniu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Selenium的前世今生">
+<meta property="og:url" content="http://huaisha1224.github.io/2017/12/26/selenium-past-and-present/index.html">
+<meta property="og:site_name" content="Smart Testing">
+<meta property="og:description" content="Selenium的前世今生Selenium1.x的诞生2004年ThoughtWorks公司的一个测试工程师‘Jason Huggins’为了减少工作量、自己实现了基于JavaScript代码库；用这套代码库可以进行页面交互操作、并且可以重复的在不同浏览器上进行操作；Selenium1.0就诞生了。 selenium 1.0包括：selenium IDE、selenium Grid、seleniu">
+<meta property="og:locale">
+<meta property="article:published_time" content="2017-12-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2019-04-27T08:02:14.000Z">
+<meta property="article:author" content="Huaisha1224">
+<meta property="article:tag" content="Automation">
+<meta property="article:tag" content="Selenium">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Smart Testing" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Smart Testing</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://huaisha1224.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-selenium-past-and-present" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2017/12/26/selenium-past-and-present/" class="article-date">
+  <time class="dt-published" datetime="2017-12-25T16:00:00.000Z" itemprop="datePublished">2017-12-26</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Selenium/">Selenium</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Selenium的前世今生
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="Selenium的前世今生"><a href="#Selenium的前世今生" class="headerlink" title="Selenium的前世今生"></a>Selenium的前世今生</h2><h3 id="Selenium1-x的诞生"><a href="#Selenium1-x的诞生" class="headerlink" title="Selenium1.x的诞生"></a>Selenium1.x的诞生</h3><p>2004年ThoughtWorks公司的一个测试工程师‘Jason Huggins’为了减少工作量、自己实现了基于JavaScript代码库；用这套代码库可以进行页面交互操作、并且可以重复的在不同浏览器上进行操作；Selenium1.0就诞生了。</p>
+<p>selenium 1.0包括：selenium IDE、selenium Grid、selenium RC这三部分。</p>
+<ul>
+<li>selenium IDE：firefox的一个插件，用来录制和回放脚本。</li>
+<li>selenium Grid：用于实现分布式测试。利用Grid，可以很方便地同时在多台机器上和异构环境中并行运行多个测试事例。</li>
+<li>selenium RC：selenium 的核心部分，可以实现利用selenium的代理服务器来实现访问浏览器实现自动化测试。</li>
+<li>其中：selenium RC分为：Client和Selenium Server。</li>
+<li>client实现自动化脚本，Selenium Server负责控制浏览器行为。</li>
+<li>Selenium Server分为3部分。</li>
+<li>Launcher：启动浏览器</li>
+<li>Http Proxy：selenium Server的Http代理</li>
+<li>Core：嵌入到浏览器的js代码。<br>有Launcher启动浏览器，将core嵌入到浏览器，并把浏览器代理设置为selenium Server的Http Proxy。</li>
+</ul>
+<p>使用的是JavaScript注入技术与浏览器打交道，需要Selenium RC启动一个Server，将操作Web元素的API调用转化为一段段Javascript，在Selenium内核启动浏览器之后注入这段Javascript。<br>正如Seleniumhq官网所说、selenium不能解决如文件上传或下载，弹出框和对话框这样的操作。</p>
+<h3 id="webdriver的诞生"><a href="#webdriver的诞生" class="headerlink" title="webdriver的诞生"></a>webdriver的诞生</h3><p>2006年一个来至Google的工程师‘Simon Stewart’做了一个叫着‘webdriver’的项目，这个项目可以直接让测试工具调用浏览器本身提供的内置方法、以此来操作浏览器；</p>
+<p>‘webdriver’提供了完全另外的一种方式与浏览器交互。那就是利用浏览器原生的API，封装成一套WebDriver API，直接操作浏览器页面里的元素，甚至操作浏览器本身（截图，窗口大小，启动，关闭）。由于使用的是浏览器原生的API，速度大大提高，而且调用的稳定性交给了浏览器厂商本身，显然是更加科学。然而带来的一些副作用就是，不同的浏览器厂商，对Web元素的操作和呈现多少会有一些差异，这就直接导致了WebDriver要分浏览器厂商不同，而提供不同的实现。例如Firefox就有专门的FirefoxDriver，Chrome就有专门的ChromeDriver等等</p>
+<p>从‘webdriver’诞生之日就和‘Selenium’是竞争对手的关系；</p>
+<h3 id="Selenium-WebDriver的诞生"><a href="#Selenium-WebDriver的诞生" class="headerlink" title="Selenium WebDriver的诞生"></a>Selenium WebDriver的诞生</h3><p>2008年‘Selenium1’和‘webdriver’2个项目进行了合并、就出现了我们大部分人见到的‘Selenium webdriver’(简称WebDriver)。<br>Selenium2 = Selenium + webdriver</p>
+<p>Selenium2是selenium1的升级版本；向下兼容Selenium的所有功能、同时提供WebDriver的API来操作浏览器。</p>
+<h3 id="Selenium3的出现"><a href="#Selenium3的出现" class="headerlink" title="Selenium3的出现"></a>Selenium3的出现</h3><p>2016年Selenium3诞生、Selenium 团队13年就放出风声要发布selenium3.0版本、直到2016年Selenium beta版本才发布。</p>
+<ul>
+<li>Selenium3去掉了RC的支持</li>
+<li>全面支持Java 8</li>
+<li>支持macOS下的safari浏览器、并且apple官方提供‘safaridriver’</li>
+<li>支持Edge浏览器、MS官方提供‘Microsoft WebDriver’的官方版本</li>
+<li>支持Mozilla官方提供的‘geckodriver’来支持firefox浏览器</li>
+</ul>
+<p>可以看到加上Chrome的原生支持、现在主流浏览器厂商都单独为Selenium3出了官方Driver版本、也就意味着这些浏览器厂商已经认可了Selenium在WEB自动化方面的地位；<br>如果你想学习WEB自动化方面的技能、那么Selenium可能是绕不过去的了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://huaisha1224.github.io/2017/12/26/selenium-past-and-present/" data-id="ckr4z8wt00012ykoegrunhyt8" data-title="Selenium的前世今生" class="article-share-link">Teilen</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Automation/" rel="tag">Automation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Selenium/" rel="tag">Selenium</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/01/04/Python-Automation-Package/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          Python下那些让人相见恨晚的自动化测试库
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Kategorien</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Automation/">Automation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Selenium/">Selenium</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ShadowSocks/">ShadowSocks</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Sysinternals/">Sysinternals</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%84%9A%E6%9C%AC/">脚本</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%97%B2%E8%B0%88/">闲谈</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Automation/" rel="tag">Automation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chromium/" rel="tag">Chromium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dota2/" rel="tag">Dota2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MYSQL/" rel="tag">MYSQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Process-Explorer/" rel="tag">Process Explorer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ProcessMonitor/" rel="tag">ProcessMonitor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pubg/" rel="tag">Pubg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyAutoGUI/" rel="tag">PyAutoGUI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robot-Framework/" rel="tag">Robot Framework</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium/" rel="tag">Selenium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium-Grid/" rel="tag">Selenium-Grid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium-IDE/" rel="tag">Selenium-IDE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ShadowSocks/" rel="tag">ShadowSocks</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Steam/" rel="tag">Steam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TCPView/" rel="tag">TCPView</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Testing/" rel="tag">Testing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unittest/" rel="tag">Unittest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VBS/" rel="tag">VBS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VSCode/" rel="tag">VSCode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9D%90%E6%A0%87/" rel="tag">坐标</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/" rel="tag">提问的智慧</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E8%89%BA%E6%9C%AF/" rel="tag">提问的艺术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95/" rel="tag">获取工作目录</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Automation/" style="font-size: 17.5px;">Automation</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Chromium/" style="font-size: 10px;">Chromium</a> <a href="/tags/Dota2/" style="font-size: 10px;">Dota2</a> <a href="/tags/MYSQL/" style="font-size: 10px;">MYSQL</a> <a href="/tags/Process-Explorer/" style="font-size: 12.5px;">Process Explorer</a> <a href="/tags/ProcessMonitor/" style="font-size: 10px;">ProcessMonitor</a> <a href="/tags/Pubg/" style="font-size: 10px;">Pubg</a> <a href="/tags/PyAutoGUI/" style="font-size: 10px;">PyAutoGUI</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/Robot-Framework/" style="font-size: 10px;">Robot Framework</a> <a href="/tags/Selenium/" style="font-size: 20px;">Selenium</a> <a href="/tags/Selenium-Grid/" style="font-size: 10px;">Selenium-Grid</a> <a href="/tags/Selenium-IDE/" style="font-size: 10px;">Selenium-IDE</a> <a href="/tags/ShadowSocks/" style="font-size: 10px;">ShadowSocks</a> <a href="/tags/Steam/" style="font-size: 10px;">Steam</a> <a href="/tags/TCPView/" style="font-size: 10px;">TCPView</a> <a href="/tags/Testing/" style="font-size: 15px;">Testing</a> <a href="/tags/Unittest/" style="font-size: 10px;">Unittest</a> <a href="/tags/VBS/" style="font-size: 10px;">VBS</a> <a href="/tags/VSCode/" style="font-size: 10px;">VSCode</a> <a href="/tags/%E5%9D%90%E6%A0%87/" style="font-size: 10px;">坐标</a> <a href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/" style="font-size: 10px;">提问的智慧</a> <a href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E8%89%BA%E6%9C%AF/" style="font-size: 10px;">提问的艺术</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 10px;">爬虫</a> <a href="/tags/%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95/" style="font-size: 10px;">获取工作目录</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/07/15/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/02/Selenium-Grid/">Selenium Grid分布式测试</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/30/smart-questions/">提问的艺术</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/18/VBS%E8%84%9A%E6%9C%AC%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E7%9A%842%E7%A7%8D%E6%96%B9%E5%BC%8F/">VBS脚本获取工作目录的2种方式</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/04/Selenium-IDE/">Selenium IDE完整功能操作指引</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Huaisha1224<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

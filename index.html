@@ -1,99 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Smart Testing</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"huaisha1224.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
   <meta property="og:type" content="website">
 <meta property="og:title" content="Smart Testing">
 <meta property="og:url" content="http://huaisha1224.github.io/index.html">
 <meta property="og:site_name" content="Smart Testing">
-<meta property="og:locale">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Huaisha1224">
 <meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://huaisha1224.github.io/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Smart Testing</title>
   
-    <link rel="alternate" href="/atom.xml" title="Smart Testing" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Smart Testing</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home  //首页 fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="about  //关于 fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="tags  //标签 fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="th   //分类 fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="archive //归档 fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="sitemap   //站点地图 fa-fw"></i>站点地图</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
 
-  
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Smart Testing</a>
-      </h1>
+          <div class="content index posts-expand">
+            
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://huaisha1224.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2021/07/15/hello-world/">
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/07/15/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-07-15T13:39:53.500Z" itemprop="datePublished">2021-07-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/07/15/hello-world/">Hello World</a>
-    </h1>
-  
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Huaisha1224">
+      <meta itemprop="description" content="">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smart Testing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/07/15/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-07-15 21:39:53" itemprop="dateCreated datePublished" datetime="2021-07-15T21:39:53+08:00">2021-07-15</time>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -109,46 +219,71 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://huaisha1224.github.io/2021/07/15/hello-world/" data-id="ckr4yn4fa00003soehyxrbblz" data-title="Hello World" class="article-share-link">Teilen</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
-
-
-  
-    <article id="post-Selenium-Grid" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/08/02/Selenium-Grid/" class="article-date">
-  <time class="dt-published" datetime="2019-08-02T04:22:56.000Z" itemprop="datePublished">2019-08-02</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Selenium/">Selenium</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/08/02/Selenium-Grid/">Selenium Grid分布式测试</a>
-    </h1>
+  
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2019/08/02/Selenium-Grid/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Huaisha1224">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smart Testing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/08/02/Selenium-Grid/" class="post-title-link" itemprop="url">Selenium Grid分布式测试</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-08-02 12:22:56 / 修改时间：12:21:28" itemprop="dateCreated datePublished" datetime="2019-08-02T12:22:56+08:00">2019-08-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Selenium/" itemprop="url" rel="index"><span itemprop="name">Selenium</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>关于Selenium Grid入门看这篇文章就够了</p>
+          <p>关于Selenium Grid入门看这篇文章就够了</p>
 <h3 id="Selenium-Grid的前世今生"><a href="#Selenium-Grid的前世今生" class="headerlink" title="Selenium Grid的前世今生"></a>Selenium Grid的前世今生</h3><blockquote>
 <p>2004年ThoughtWorks公司的一个测试工程师‘Jason Huggins’为了减少工作量、自己实现了基于JavaScript代码库；用这套代码库可以进行页面交互操作、并且可以重复的在不同浏览器上进行操作；Selenium1.0就诞生了</p>
 </blockquote>
@@ -326,48 +461,71 @@ driver.find_element_by_id(&#39;su&#39;).click()
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://huaisha1224.github.io/2019/08/02/Selenium-Grid/" data-id="ckr4z8wsp0009ykoefcbs0hwn" data-title="Selenium Grid分布式测试" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Selenium/" rel="tag">Selenium</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Selenium-Grid/" rel="tag">Selenium-Grid</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-smart-questions" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/07/30/smart-questions/" class="article-date">
-  <time class="dt-published" datetime="2019-07-30T01:22:56.000Z" itemprop="datePublished">2019-07-30</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E9%97%B2%E8%B0%88/">闲谈</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/07/30/smart-questions/">提问的艺术</a>
-    </h1>
+  
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2019/07/30/smart-questions/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Huaisha1224">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smart Testing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/07/30/smart-questions/" class="post-title-link" itemprop="url">提问的艺术</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-07-30 09:22:56 / 修改时间：09:13:58" itemprop="dateCreated datePublished" datetime="2019-07-30T09:22:56+08:00">2019-07-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%97%B2%E8%B0%88/" itemprop="url" rel="index"><span itemprop="name">闲谈</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <h3 id="为什么要写这个内容"><a href="#为什么要写这个内容" class="headerlink" title="为什么要写这个内容"></a>为什么要写这个内容</h3><pre><code>今天在AirTest讨论群里面有人提问、但是由于问题实在是。。。。所以无人回答、大致内容如下。
+          <h3 id="为什么要写这个内容"><a href="#为什么要写这个内容" class="headerlink" title="为什么要写这个内容"></a>为什么要写这个内容</h3><pre><code>今天在AirTest讨论群里面有人提问、但是由于问题实在是。。。。所以无人回答、大致内容如下。
 </code></pre>
 <blockquote>
 <p>提问者：请问下 python 怎么远程操作win服务器</p>
@@ -461,48 +619,71 @@ driver.find_element_by_id(&#39;su&#39;).click()
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://huaisha1224.github.io/2019/07/30/smart-questions/" data-id="ckr4z8wt00015ykoeaekq0n7c" data-title="提问的艺术" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/" rel="tag">提问的智慧</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E8%89%BA%E6%9C%AF/" rel="tag">提问的艺术</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-VBS脚本获取工作目录的2种方式" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/07/18/VBS%E8%84%9A%E6%9C%AC%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E7%9A%842%E7%A7%8D%E6%96%B9%E5%BC%8F/" class="article-date">
-  <time class="dt-published" datetime="2019-07-18T11:22:56.000Z" itemprop="datePublished">2019-07-18</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%84%9A%E6%9C%AC/">脚本</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/07/18/VBS%E8%84%9A%E6%9C%AC%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E7%9A%842%E7%A7%8D%E6%96%B9%E5%BC%8F/">VBS脚本获取工作目录的2种方式</a>
-    </h1>
+  
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2019/07/18/VBS%E8%84%9A%E6%9C%AC%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E7%9A%842%E7%A7%8D%E6%96%B9%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Huaisha1224">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smart Testing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/07/18/VBS%E8%84%9A%E6%9C%AC%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E7%9A%842%E7%A7%8D%E6%96%B9%E5%BC%8F/" class="post-title-link" itemprop="url">VBS脚本获取工作目录的2种方式</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-07-18 19:22:56 / 修改时间：20:17:04" itemprop="dateCreated datePublished" datetime="2019-07-18T19:22:56+08:00">2019-07-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%84%9A%E6%9C%AC/" itemprop="url" rel="index"><span itemprop="name">脚本</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>这几天用VBS写了一些自动化的脚本、脚本里面有需要调用一些当前目录下的文件；<br>由于不想写绝对路径(E:\VBS\test.vbs)、希望在VBS脚本里面写成(“test.vbs”)这种方式；而且这样写的好处很明显、你可以把你的文件随便存放、而不需要修改你的VBS脚本。</p>
+          <p>这几天用VBS写了一些自动化的脚本、脚本里面有需要调用一些当前目录下的文件；<br>由于不想写绝对路径(E:\VBS\test.vbs)、希望在VBS脚本里面写成(“test.vbs”)这种方式；而且这样写的好处很明显、你可以把你的文件随便存放、而不需要修改你的VBS脚本。</p>
 <h3 id="问题很大"><a href="#问题很大" class="headerlink" title="问题很大"></a>问题很大</h3><p>但是当VBS脚本写完之后在测试的过程中、发现当我在CMD命令行模式下运行VBS脚本的时候就会找不到文件路径；<br>所以我准备在VBS代码里面把当前的工作目录切换到实际的VBS脚本目录下；</p>
 <p>在翻看VBS文档的过程中发现有2种方法获取当前文件目录;</p>
 <pre><code>GetFolder()和GetFile()都可以获取到当前目录
@@ -538,48 +719,71 @@ msgbox currentpath
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://huaisha1224.github.io/2019/07/18/VBS%E8%84%9A%E6%9C%AC%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E7%9A%842%E7%A7%8D%E6%96%B9%E5%BC%8F/" data-id="ckr4z8wsy000uykoe3nskditf" data-title="VBS脚本获取工作目录的2种方式" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VBS/" rel="tag">VBS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95/" rel="tag">获取工作目录</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Selenium-IDE" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/06/04/Selenium-IDE/" class="article-date">
-  <time class="dt-published" datetime="2019-06-04T11:01:25.000Z" itemprop="datePublished">2019-06-04</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Selenium/">Selenium</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/06/04/Selenium-IDE/">Selenium IDE完整功能操作指引</a>
-    </h1>
+  
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2019/06/04/Selenium-IDE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Huaisha1224">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smart Testing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/06/04/Selenium-IDE/" class="post-title-link" itemprop="url">Selenium IDE完整功能操作指引</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-06-04 19:01:25 / 修改时间：19:20:57" itemprop="dateCreated datePublished" datetime="2019-06-04T19:01:25+08:00">2019-06-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Selenium/" itemprop="url" rel="index"><span itemprop="name">Selenium</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <h3 id="Selenium-IDE简介"><a href="#Selenium-IDE简介" class="headerlink" title="Selenium IDE简介"></a>Selenium IDE简介</h3><p>我在另外的文章里面有写到过Selenium的前世今生；介绍了Selenium项目的发展历程；</p>
+          <h3 id="Selenium-IDE简介"><a href="#Selenium-IDE简介" class="headerlink" title="Selenium IDE简介"></a>Selenium IDE简介</h3><p>我在另外的文章里面有写到过Selenium的前世今生；介绍了Selenium项目的发展历程；</p>
 <p>selenium 1.0包括：selenium IDE、selenium Grid、selenium RC这三部分<br>Selenium IDE其实是Selenium1的产物、仅支持Firefox浏览器。</p>
 <p>在Selenium2时代、Selenium IDE基本上都没有更新；</p>
 <p>虽然Selenium2已经可以接入robot framework、可以在Airtest中使用；但是还是有很多初入自动化的同学想用selenium IDE来实现一些简单的自动化操作；</p>
@@ -706,48 +910,71 @@ msgbox currentpath
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://huaisha1224.github.io/2019/06/04/Selenium-IDE/" data-id="ckr4z8wsr000eykoe31bz1p9p" data-title="Selenium IDE完整功能操作指引" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Selenium/" rel="tag">Selenium</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Selenium-IDE/" rel="tag">Selenium-IDE</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Selenium-Chromium" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/04/27/Selenium-Chromium/" class="article-date">
-  <time class="dt-published" datetime="2019-04-27T07:55:26.000Z" itemprop="datePublished">2019-04-27</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Selenium/">Selenium</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/04/27/Selenium-Chromium/">Selenium启动Chromium换皮浏览器</a>
-    </h1>
+  
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2019/04/27/Selenium-Chromium/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Huaisha1224">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smart Testing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/04/27/Selenium-Chromium/" class="post-title-link" itemprop="url">Selenium启动Chromium换皮浏览器</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-04-27 15:55:26 / 修改时间：15:53:10" itemprop="dateCreated datePublished" datetime="2019-04-27T15:55:26+08:00">2019-04-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Selenium/" itemprop="url" rel="index"><span itemprop="name">Selenium</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>最近在用selenium做自动化测试的时候、由于需要测试Chromium换皮浏览器(类似360极速浏览器/QQ浏览器)这种。</p>
+          <p>最近在用selenium做自动化测试的时候、由于需要测试Chromium换皮浏览器(类似360极速浏览器/QQ浏览器)这种。</p>
 <h3 id="话比较多"><a href="#话比较多" class="headerlink" title="话比较多"></a>话比较多</h3><p>我们都知道Selenium支持Chrome浏览器、而Chrome又是通过Chromium开源项目的商业版本；<br>所以Selenium肯定是支持Chromium浏览器的；<br>好了、我这次要测试的浏览器是用Chromium开源代码、重新换了皮肤的版本；就和360浏览器QQ浏览器一样一样的；</p>
 <p>所以Selenium肯定也是支持所有基于Chromium衍生来的浏览器版本的。</p>
 <p>我的推理就到这里结束了；</p>
@@ -785,48 +1012,77 @@ br.quit()
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://huaisha1224.github.io/2019/04/27/Selenium-Chromium/" data-id="ckr4z8wso0006ykoegkkgfhap" data-title="Selenium启动Chromium换皮浏览器" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chromium/" rel="tag">Chromium</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Selenium/" rel="tag">Selenium</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-用Selenium绕过反爬机制登录知乎" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/04/19/%E7%94%A8Selenium%E7%BB%95%E8%BF%87%E5%8F%8D%E7%88%AC%E6%9C%BA%E5%88%B6%E7%99%BB%E5%BD%95%E7%9F%A5%E4%B9%8E/" class="article-date">
-  <time class="dt-published" datetime="2019-04-19T08:41:57.000Z" itemprop="datePublished">2019-04-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Selenium/">Selenium</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/04/19/%E7%94%A8Selenium%E7%BB%95%E8%BF%87%E5%8F%8D%E7%88%AC%E6%9C%BA%E5%88%B6%E7%99%BB%E5%BD%95%E7%9F%A5%E4%B9%8E/">用Selenium绕过反爬机制登录知乎</a>
-    </h1>
+  
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2019/04/19/%E7%94%A8Selenium%E7%BB%95%E8%BF%87%E5%8F%8D%E7%88%AC%E6%9C%BA%E5%88%B6%E7%99%BB%E5%BD%95%E7%9F%A5%E4%B9%8E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Huaisha1224">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smart Testing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/04/19/%E7%94%A8Selenium%E7%BB%95%E8%BF%87%E5%8F%8D%E7%88%AC%E6%9C%BA%E5%88%B6%E7%99%BB%E5%BD%95%E7%9F%A5%E4%B9%8E/" class="post-title-link" itemprop="url">用Selenium绕过反爬机制登录知乎</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-19 16:41:57" itemprop="dateCreated datePublished" datetime="2019-04-19T16:41:57+08:00">2019-04-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-04-27 15:53:55" itemprop="dateModified" datetime="2019-04-27T15:53:55+08:00">2019-04-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Selenium/" itemprop="url" rel="index"><span itemprop="name">Selenium</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>很久很久很久之前写过一个把知乎的收藏夹里面的回答用邮件的方式发送到Evernote/印象笔记/OneNote/有道云笔记的功能；<br>后来一直没有维护、最近发现在Github上有留言、希望能继续维护、因为知乎改版之后那个功能就不能用了。</p>
+          <p>很久很久很久之前写过一个把知乎的收藏夹里面的回答用邮件的方式发送到Evernote/印象笔记/OneNote/有道云笔记的功能；<br>后来一直没有维护、最近发现在Github上有留言、希望能继续维护、因为知乎改版之后那个功能就不能用了。</p>
 <p>以前的版本我是用<code>Requests</code> 和 <code>BeautifulSoup</code>来抓取数据、最近在重新写的时候发现用<code>requests</code>访问知乎时、直接返回个<code>status_code</code> 400; 一点数据都拿不到、应该是做了反爬处理了。</p>
 <h3 id="该selenium上场了"><a href="#该selenium上场了" class="headerlink" title="该selenium上场了"></a>该selenium上场了</h3><pre><code>Selenium是一款用于做Web测试自动化的框架、也就是软件测试工程师用来测试网页在浏览器上是否正常；
 大部分时候用于做Web的回归测试自动化。
@@ -894,48 +1150,71 @@ br.find_element_by_xpath(&#39;//*[@id=&quot;root&quot;]/div/main/div/div/div/div
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://huaisha1224.github.io/2019/04/19/%E7%94%A8Selenium%E7%BB%95%E8%BF%87%E5%8F%8D%E7%88%AC%E6%9C%BA%E5%88%B6%E7%99%BB%E5%BD%95%E7%9F%A5%E4%B9%8E/" data-id="ckr4z8wti003bykoe0ft723wm" data-title="用Selenium绕过反爬机制登录知乎" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Selenium/" rel="tag">Selenium</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-CentOS7-Yum-Install-Mysql" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/04/02/CentOS7-Yum-Install-Mysql/" class="article-date">
-  <time class="dt-published" datetime="2019-04-02T08:15:54.000Z" itemprop="datePublished">2019-04-02</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Linux/">Linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/04/02/CentOS7-Yum-Install-Mysql/">CentOS7下用Yum安装Mysql指定版本</a>
-    </h1>
+  
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2019/04/02/CentOS7-Yum-Install-Mysql/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Huaisha1224">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smart Testing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/04/02/CentOS7-Yum-Install-Mysql/" class="post-title-link" itemprop="url">CentOS7下用Yum安装Mysql指定版本</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-04-02 16:15:54 / 修改时间：18:30:43" itemprop="dateCreated datePublished" datetime="2019-04-02T16:15:54+08:00">2019-04-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <h3 id="安装Mysql"><a href="#安装Mysql" class="headerlink" title="安装Mysql"></a>安装Mysql</h3><h4 id="先卸载MariaDB数据库"><a href="#先卸载MariaDB数据库" class="headerlink" title="先卸载MariaDB数据库"></a>先卸载MariaDB数据库</h4><pre><code>由于Centos7默认会安装MariaDB、我们需要Mysql、所以需要先卸载MariaDB。
+          <h3 id="安装Mysql"><a href="#安装Mysql" class="headerlink" title="安装Mysql"></a>安装Mysql</h3><h4 id="先卸载MariaDB数据库"><a href="#先卸载MariaDB数据库" class="headerlink" title="先卸载MariaDB数据库"></a>先卸载MariaDB数据库</h4><pre><code>由于Centos7默认会安装MariaDB、我们需要Mysql、所以需要先卸载MariaDB。
 </code></pre>
 <p>查询一下MariaDB是否安装</p>
 <pre><code>yum list installed | grep mariadb
@@ -1010,48 +1289,77 @@ mysql&gt;flush privileges;
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://huaisha1224.github.io/2019/04/02/CentOS7-Yum-Install-Mysql/" data-id="ckr4z8wsh0001ykoe87s4afng" data-title="CentOS7下用Yum安装Mysql指定版本" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MYSQL/" rel="tag">MYSQL</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-VSCode-for-Python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/02/13/VSCode-for-Python/" class="article-date">
-  <time class="dt-published" datetime="2019-02-13T10:26:17.000Z" itemprop="datePublished">2019-02-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Python/">Python</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/02/13/VSCode-for-Python/">配置VSCode舒心的写Python代码</a>
-    </h1>
+  
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2019/02/13/VSCode-for-Python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Huaisha1224">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smart Testing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/02/13/VSCode-for-Python/" class="post-title-link" itemprop="url">配置VSCode舒心的写Python代码</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-02-13 18:26:17" itemprop="dateCreated datePublished" datetime="2019-02-13T18:26:17+08:00">2019-02-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-04-27 15:54:48" itemprop="dateModified" datetime="2019-04-27T15:54:48+08:00">2019-04-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>VSCode可以说是2018年讨论最火热的编辑器；如果你之前用Atom、sublime text这类文本编辑器来写Python代码、那么VSCode绝对值得你尝试；<br>我原来使用sublime text、后来换到VSCode之后 就再也没回到sublime text上了。</p>
+          <p>VSCode可以说是2018年讨论最火热的编辑器；如果你之前用Atom、sublime text这类文本编辑器来写Python代码、那么VSCode绝对值得你尝试；<br>我原来使用sublime text、后来换到VSCode之后 就再也没回到sublime text上了。</p>
 <p>由于文本编辑器和PyCharm这类IDE还是有不少区别、所以我们在使用文本编辑器的时候都需要按照自己的喜好来进行各种配置；</p>
 <p>很大部分的配置我们可以直接在VSCode内置的功能里面得到满意的解决方案、如果你不喜欢原生的可以安装插件来解决</p>
 <p>下面是我在用VSCode写Python代码时候用的一些配置和插件</p>
@@ -1123,48 +1431,77 @@ mysql&gt;flush privileges;
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://huaisha1224.github.io/2019/02/13/VSCode-for-Python/" data-id="ckr4z8wsz000yykoeho7rcpwy" data-title="配置VSCode舒心的写Python代码" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VSCode/" rel="tag">VSCode</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-FindMultiColor" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2019/01/22/FindMultiColor/" class="article-date">
-  <time class="dt-published" datetime="2019-01-22T02:45:27.000Z" itemprop="datePublished">2019-01-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Automation/">Automation</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2019/01/22/FindMultiColor/">“颜色识别技术”在UI测试自动化中的应用</a>
-    </h1>
+  
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2019/01/22/FindMultiColor/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Huaisha1224">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smart Testing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/01/22/FindMultiColor/" class="post-title-link" itemprop="url">“颜色识别技术”在UI测试自动化中的应用</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-01-22 10:45:27" itemprop="dateCreated datePublished" datetime="2019-01-22T10:45:27+08:00">2019-01-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-04-27 15:55:39" itemprop="dateModified" datetime="2019-04-27T15:55:39+08:00">2019-04-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Automation/" itemprop="url" rel="index"><span itemprop="name">Automation</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <h3 id="颜色识别方案"><a href="#颜色识别方案" class="headerlink" title="颜色识别方案"></a>颜色识别方案</h3><p>之前的文章里面有介绍过怎么样用坐标来实现UI测试自动化、但是坐标法有一些致命的缺点、比如<code>不能做断言</code>还有<code>兼容性很差</code>；所以这次的内容我会和大家分享一下怎么样用颜色识别技术来做UI测试自动化。</p>
+          <h3 id="颜色识别方案"><a href="#颜色识别方案" class="headerlink" title="颜色识别方案"></a>颜色识别方案</h3><p>之前的文章里面有介绍过怎么样用坐标来实现UI测试自动化、但是坐标法有一些致命的缺点、比如<code>不能做断言</code>还有<code>兼容性很差</code>；所以这次的内容我会和大家分享一下怎么样用颜色识别技术来做UI测试自动化。</p>
 <p>在讲颜色识别之前、必须要先简单介绍一下<code>三原色</code>、<code>颜色值</code>和<code>像素</code></p>
 <h4 id="三原色-RGB"><a href="#三原色-RGB" class="headerlink" title="三原色(RGB)"></a>三原色(RGB)</h4><blockquote>
 <p>我们在显示器上看到的所有色彩都是红绿蓝三种颜色调和而成<br>下图经典的三原色图片</p>
@@ -1258,143 +1595,186 @@ if login[0] &gt; 0:
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://huaisha1224.github.io/2019/01/22/FindMultiColor/" data-id="ckr4z8wse0000ykoe91oyfulj" data-title="“颜色识别技术”在UI测试自动化中的应用" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Automation/" rel="tag">Automation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Testing/" rel="tag">Testing</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-  <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">weiter &raquo;</a>
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
-</section>
-        
-          <aside id="sidebar">
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Kategorien</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Automation/">Automation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Selenium/">Selenium</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ShadowSocks/">ShadowSocks</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Sysinternals/">Sysinternals</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%84%9A%E6%9C%AC/">脚本</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%97%B2%E8%B0%88/">闲谈</a></li></ul>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
+  <aside class="sidebar">
+    <div class="sidebar-inner">
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Automation/" rel="tag">Automation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chromium/" rel="tag">Chromium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dota2/" rel="tag">Dota2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MYSQL/" rel="tag">MYSQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Process-Explorer/" rel="tag">Process Explorer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ProcessMonitor/" rel="tag">ProcessMonitor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Pubg/" rel="tag">Pubg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PyAutoGUI/" rel="tag">PyAutoGUI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robot-Framework/" rel="tag">Robot Framework</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium/" rel="tag">Selenium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium-Grid/" rel="tag">Selenium-Grid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium-IDE/" rel="tag">Selenium-IDE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ShadowSocks/" rel="tag">ShadowSocks</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Steam/" rel="tag">Steam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TCPView/" rel="tag">TCPView</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Testing/" rel="tag">Testing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unittest/" rel="tag">Unittest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VBS/" rel="tag">VBS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VSCode/" rel="tag">VSCode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9D%90%E6%A0%87/" rel="tag">坐标</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/" rel="tag">提问的智慧</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E8%89%BA%E6%9C%AF/" rel="tag">提问的艺术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95/" rel="tag">获取工作目录</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Automation/" style="font-size: 17.5px;">Automation</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Chromium/" style="font-size: 10px;">Chromium</a> <a href="/tags/Dota2/" style="font-size: 10px;">Dota2</a> <a href="/tags/MYSQL/" style="font-size: 10px;">MYSQL</a> <a href="/tags/Process-Explorer/" style="font-size: 12.5px;">Process Explorer</a> <a href="/tags/ProcessMonitor/" style="font-size: 10px;">ProcessMonitor</a> <a href="/tags/Pubg/" style="font-size: 10px;">Pubg</a> <a href="/tags/PyAutoGUI/" style="font-size: 10px;">PyAutoGUI</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/Robot-Framework/" style="font-size: 10px;">Robot Framework</a> <a href="/tags/Selenium/" style="font-size: 20px;">Selenium</a> <a href="/tags/Selenium-Grid/" style="font-size: 10px;">Selenium-Grid</a> <a href="/tags/Selenium-IDE/" style="font-size: 10px;">Selenium-IDE</a> <a href="/tags/ShadowSocks/" style="font-size: 10px;">ShadowSocks</a> <a href="/tags/Steam/" style="font-size: 10px;">Steam</a> <a href="/tags/TCPView/" style="font-size: 10px;">TCPView</a> <a href="/tags/Testing/" style="font-size: 15px;">Testing</a> <a href="/tags/Unittest/" style="font-size: 10px;">Unittest</a> <a href="/tags/VBS/" style="font-size: 10px;">VBS</a> <a href="/tags/VSCode/" style="font-size: 10px;">VSCode</a> <a href="/tags/%E5%9D%90%E6%A0%87/" style="font-size: 10px;">坐标</a> <a href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/" style="font-size: 10px;">提问的智慧</a> <a href="/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E8%89%BA%E6%9C%AF/" style="font-size: 10px;">提问的艺术</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 10px;">爬虫</a> <a href="/tags/%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95/" style="font-size: 10px;">获取工作目录</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/07/15/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/02/Selenium-Grid/">Selenium Grid分布式测试</a>
-          </li>
-        
-          <li>
-            <a href="/2019/07/30/smart-questions/">提问的艺术</a>
-          </li>
-        
-          <li>
-            <a href="/2019/07/18/VBS%E8%84%9A%E6%9C%AC%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E7%9A%842%E7%A7%8D%E6%96%B9%E5%BC%8F/">VBS脚本获取工作目录的2种方式</a>
-          </li>
-        
-          <li>
-            <a href="/2019/06/04/Selenium-IDE/">Selenium IDE完整功能操作指引</a>
-          </li>
-        
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
       </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 Huaisha1224<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Huaisha1224</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
 
     </div>
-    <nav id="mobile-nav">
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
   
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Huaisha1224</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
 </body>
 </html>

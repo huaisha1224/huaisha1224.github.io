@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"huaisha1224.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"huaisha1224.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="Selenium的前世今生Selenium1.x的诞生2004年ThoughtWorks公司的一个测试工程师‘Jason Huggins’为了减少工作量、自己实现了基于JavaScript代码库；用这套代码库可以进行页面交互操作、并且可以重复的在不同浏览器上进行操作；Selenium1.0就诞生了。 selenium 1.0包括：selenium IDE、selenium Grid、seleniu">
@@ -28,7 +28,7 @@
 <meta property="og:description" content="Selenium的前世今生Selenium1.x的诞生2004年ThoughtWorks公司的一个测试工程师‘Jason Huggins’为了减少工作量、自己实现了基于JavaScript代码库；用这套代码库可以进行页面交互操作、并且可以重复的在不同浏览器上进行操作；Selenium1.0就诞生了。 selenium 1.0包括：selenium IDE、selenium Grid、seleniu">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2017-12-25T16:00:00.000Z">
-<meta property="article:modified_time" content="2019-04-27T08:02:14.000Z">
+<meta property="article:modified_time" content="2021-07-15T15:05:15.146Z">
 <meta property="article:author" content="Huaisha1224">
 <meta property="article:tag" content="Automation">
 <meta property="article:tag" content="Selenium">
@@ -139,11 +139,6 @@
     <a href="/archives/" rel="section"><i class="archive //归档 fa-fw"></i>归档</a>
 
   </li>
-        <li class="menu-item menu-item-sitemap">
-
-    <a href="/sitemap.xml" rel="section"><i class="sitemap   //站点地图 fa-fw"></i>站点地图</a>
-
-  </li>
   </ul>
 </nav>
 
@@ -202,7 +197,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-04-27 16:02:14" itemprop="dateModified" datetime="2019-04-27T16:02:14+08:00">2019-04-27</time>
+                <time title="修改时间：2021-07-15 23:05:15" itemprop="dateModified" datetime="2021-07-15T23:05:15+08:00">2021-07-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -236,8 +231,10 @@
 <li>Selenium Server分为3部分。</li>
 <li>Launcher：启动浏览器</li>
 <li>Http Proxy：selenium Server的Http代理</li>
-<li>Core：嵌入到浏览器的js代码。<br>有Launcher启动浏览器，将core嵌入到浏览器，并把浏览器代理设置为selenium Server的Http Proxy。</li>
+<li>Core：嵌入到浏览器的js代码。</li>
 </ul>
+<span id="more"></span>
+<p>有Launcher启动浏览器，将core嵌入到浏览器，并把浏览器代理设置为selenium Server的Http Proxy。</p>
 <p>使用的是JavaScript注入技术与浏览器打交道，需要Selenium RC启动一个Server，将操作Web元素的API调用转化为一段段Javascript，在Selenium内核启动浏览器之后注入这段Javascript。<br>正如Seleniumhq官网所说、selenium不能解决如文件上传或下载，弹出框和对话框这样的操作。</p>
 <h3 id="webdriver的诞生"><a href="#webdriver的诞生" class="headerlink" title="webdriver的诞生"></a>webdriver的诞生</h3><p>2006年一个来至Google的工程师‘Simon Stewart’做了一个叫着‘webdriver’的项目，这个项目可以直接让测试工具调用浏览器本身提供的内置方法、以此来操作浏览器；</p>
 <p>‘webdriver’提供了完全另外的一种方式与浏览器交互。那就是利用浏览器原生的API，封装成一套WebDriver API，直接操作浏览器页面里的元素，甚至操作浏览器本身（截图，窗口大小，启动，关闭）。由于使用的是浏览器原生的API，速度大大提高，而且调用的稳定性交给了浏览器厂商本身，显然是更加科学。然而带来的一些副作用就是，不同的浏览器厂商，对Web元素的操作和呈现多少会有一些差异，这就直接导致了WebDriver要分浏览器厂商不同，而提供不同的实现。例如Firefox就有专门的FirefoxDriver，Chrome就有专门的ChromeDriver等等</p>
@@ -361,7 +358,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -394,7 +391,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Huaisha1224</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
         
@@ -420,7 +417,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/pisces.js"></script>
+<script src="/js/schemes/muse.js"></script>
 
 
 <script src="/js/next-boot.js"></script>

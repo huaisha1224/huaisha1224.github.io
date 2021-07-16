@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"huaisha1224.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"huaisha1224.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta property="og:type" content="website">
@@ -133,11 +133,6 @@
     <a href="/archives/" rel="section"><i class="archive //归档 fa-fw"></i>归档</a>
 
   </li>
-        <li class="menu-item menu-item-sitemap">
-
-    <a href="/sitemap.xml" rel="section"><i class="sitemap   //站点地图 fa-fw"></i>站点地图</a>
-
-  </li>
   </ul>
 </nav>
 
@@ -165,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2021/07/15/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2021/07/16/Fping/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -179,7 +174,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/07/15/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2021/07/16/Fping/" class="post-title-link" itemprop="url">Fping 高性能Ping工具</a>
         </h2>
 
         <div class="post-meta">
@@ -188,8 +183,18 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-07-15 21:39:53" itemprop="dateCreated datePublished" datetime="2021-07-15T21:39:53+08:00">2021-07-15</time>
+              <time title="创建时间：2021-07-16 11:22:56 / 修改时间：11:47:09" itemprop="dateCreated datePublished" datetime="2021-07-16T11:22:56+08:00">2021-07-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Sysinternals/" itemprop="url" rel="index"><span itemprop="name">Sysinternals</span></a>
+                </span>
             </span>
 
           
@@ -203,20 +208,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <p>高性能Ping工具</p>
+<blockquote>
+<p>fping是一个小型命令行工具，用于向网络主机发送ICMP （ Internet控制消息协议 ）回应请求，类似于ping，但在ping多个主机时性能要高得多。<br>fping完全不同于ping，因为您可以在命令行上定义任意数量的主机，或者指定包含要ping的IP地址或主机列表的文件。</p>
+</blockquote>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/07/16/Fping/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -258,10 +261,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-08-02 12:22:56 / 修改时间：12:21:28" itemprop="dateCreated datePublished" datetime="2019-08-02T12:22:56+08:00">2019-08-02</time>
+              <time title="创建时间：2019-08-02 12:22:56" itemprop="dateCreated datePublished" datetime="2019-08-02T12:22:56+08:00">2019-08-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-15 23:03:52" itemprop="dateModified" datetime="2021-07-15T23:03:52+08:00">2021-07-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -289,176 +298,14 @@
 </blockquote>
 <pre><code>在Selenium 1.0的版本中包括：Selenium IDE、Selenium Grid、Selenium RC这三部分;
 </code></pre>
-<blockquote>
-<p>2006年一个来至Google的工程师‘Simon Stewart’做了一个叫着‘webdriver’的项目，这个项目可以直接让测试工具调用浏览器本身提供的内置方法、以此来操作浏览器</p>
-</blockquote>
-<pre><code>2008年‘Selenium1’和‘webdriver’2个项目进行了合并；就出现了我们大部分人见到的‘Selenium webdriver’(简称WebDriver)。
-
-Selenium2 = Selenium + webdriver
-</code></pre>
-<p>而我们今天要介绍的Selenium Grid也和Selenium RC合并到了一起、成为全新的Selenium Grid</p>
-<p>现在Selenium Grid已经来到了3.14版本；而最新的Selenium 4版本也即将和我们见面(如果作者不延期的话)</p>
-<h4 id="Selenium-Grid-能做什么"><a href="#Selenium-Grid-能做什么" class="headerlink" title="Selenium Grid 能做什么"></a>Selenium Grid 能做什么</h4><blockquote>
-<p>Selenium-Grid 允许你在多台机器的多个浏览器上并行的进行测试，也就是说，你可以同时运行多个测试。本<br>质上来说就是，Selenium-Grid 支持分布式的测试执行。它可以让你的测试在一个分布式的执行环境中运行。</p>
-</blockquote>
-<blockquote>
-<p>换而言之，使用 Selenium Grid 可以让我们在分布式测试环境下执行测试，例如 Windows，Linux，Mac OS，Andoid/iOS 等等，这样可以大大减少重复的工作量，提高我们的工作效率;</p>
-</blockquote>
-<h4 id="什么时候需要用到Selenium-Grid"><a href="#什么时候需要用到Selenium-Grid" class="headerlink" title="什么时候需要用到Selenium Grid"></a>什么时候需要用到Selenium Grid</h4><ul>
-<li>通常需要做多个浏览器的兼容性测试，即在不同浏览器或不同操作系统的浏览器中进行测试</li>
-<li>测试用例较多时，也可以通过分布式测试减少测试执行时间</li>
-</ul>
-<h4 id="Selenium-Grid架构"><a href="#Selenium-Grid架构" class="headerlink" title="Selenium Grid架构"></a>Selenium Grid架构</h4><p>一个 Grid 框架包含一个 hub 节点和若干个 node 节点。hub 节点是管理所有 node 节点的注册和状态等信息，是一个中心控制节点。也就是说 hub 节点一接收到用户的调用请求，就会把这个请求再转给 node 这类工作节点，node 节点便会在相应的环境及浏览器中执行由 hub 下发的测试用例。原则上说，node 越多的话，该测试环境自动化执行效率就会越高；</p>
-<p><img src="/uploads/image/2019/08/Selenium-grid.png" alt="Selenium Grid"></p>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><h4 id="准备测试机器"><a href="#准备测试机器" class="headerlink" title="准备测试机器"></a>准备测试机器</h4><pre><code>由于selenium Grid有Hub和Node模式；所以我们至少需要2台电脑
-</code></pre>
-<table>
-<thead>
-<tr>
-<th align="left">名称</th>
-<th align="left">IP地址</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Hub机</td>
-<td align="left">192.168.104.209</td>
-</tr>
-<tr>
-<td align="left">Node机</td>
-<td align="left">192.168.104.172</td>
-</tr>
-</tbody></table>
-<h4 id="安装Python"><a href="#安装Python" class="headerlink" title="安装Python"></a>安装Python</h4><pre><code>现在最新版本的Python版本是3.7.4、大家可以直接安装Python3版本、不要纠结于要不要用Python2
-</code></pre>
-<ul>
-<li>从官网下载和你系统对应版本的Python(32位系统还是64位系统)</li>
-<li>安装完成之后确认一下环境变量是否配置成功</li>
-<li>在CMD命令行中执行<code>python -V</code>，如果命令行输出版本信息、说明环境变量配置成功</li>
-</ul>
-<h4 id="下载Selenium-Grid最新版本"><a href="#下载Selenium-Grid最新版本" class="headerlink" title="下载Selenium Grid最新版本"></a>下载Selenium Grid最新版本</h4><p>从<code>SeleniumHq</code>官网下载最新版本的<code>selenium-server</code>; 写文章的时候是2019-08-01、能下载到的最新正式版本是3.141.59版本</p>
-<p><img src="/uploads/image/2019/08/selenium-server-down.png"></p>
-<p><a target="_blank" rel="noopener" href="https://www.seleniumhq.org/download/">Selenium-Grid下载地址</a></p>
-<h4 id="配置Java运行环境"><a href="#配置Java运行环境" class="headerlink" title="配置Java运行环境"></a>配置Java运行环境</h4><p>由于下载回来的Grid是一个jar包、所以我们需要部署好java环境；</p>
-<ul>
-<li>从java官网下载最新版本的JAVA-SDK安装包</li>
-<li>一路下一步安装完成</li>
-<li>配置一下环境变量</li>
-<li>在CMD命令下输入<code>java -version</code>确认是否安装成功</li>
-</ul>
-<p><img src="/uploads/image/2019/08/java-version.png" alt="Java-Version"></p>
-<ul>
-<li><a target="_blank" rel="noopener" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java-SDK下载</a></li>
-</ul>
-<h4 id="配置浏览器驱动"><a href="#配置浏览器驱动" class="headerlink" title="配置浏览器驱动"></a>配置浏览器驱动</h4><p>请根据你的浏览器版本、下载好对应的驱动程序</p>
-<ul>
-<li>用Chrome浏览器就去下载chromedriver.exe</li>
-<li>如果是用firefox浏览器就下载geckodriver.exe</li>
-<li>把浏览器驱动添加到环境变量里面</li>
-</ul>
-<p>可以从下面的地址中下载对应的驱动程序</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/chromedriver/">Chrome浏览器驱动</a></li>
-<li><a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/geckodriver/">Firefox浏览器驱动</a></li>
-</ul>
-<h3 id="部署Selenium-Grid的Hub节点"><a href="#部署Selenium-Grid的Hub节点" class="headerlink" title="部署Selenium Grid的Hub节点"></a>部署Selenium Grid的Hub节点</h3><blockquote>
-<p>我们在192.168.104.209这台Hub机器上运行如下的命令</p>
-</blockquote>
-<pre><code>java -jar selenium-server-standalone-3.141.59.jar -role hub
-</code></pre>
-<p>Hub节点常用参数</p>
-<ul>
-<li><code>-role</code> hub 即用Hub模式启动</li>
-<li><code>-port</code> Hub启动的端口；node节点连接的端口</li>
-<li><code>-Huhubhost</code> 如果有多个IP的话、可以指定绑定IP地址</li>
-</ul>
-<p>其默认监听端口4444，默认IP是localhost 如果要修改，只需要加-port和-Hubhost</p>
-<p><img src="/uploads/image/2019/08/Hub-start.png" alt="Hub-start"></p>
-<pre><code>Hub启动成功之后我们在浏览器上访问 http://192.168.104.209:4444/grid/console
-就可以看到Hub的状态信息、如果能看到如下图的信息、说明Hub启动成功了
-</code></pre>
-<p><img src="/uploads/image/2019/08/Hub-console.png" alt="Hub-console"></p>
-<h3 id="部署Selenium-Grid的Node节点"><a href="#部署Selenium-Grid的Node节点" class="headerlink" title="部署Selenium Grid的Node节点"></a>部署Selenium Grid的Node节点</h3><blockquote>
-<p>我们在192.168.104.172这台Node节点机器上执行如下命令</p>
-</blockquote>
-<pre><code>java -jar selenium-server-standalone-3.141.59.jar -role node  -hub http://192.168.104.209:4444/grid/register -port 6666
-</code></pre>
-<p>Node节点常用参数</p>
-<ul>
-<li><code>-role</code> node 设置为node模式启动</li>
-<li><code>-hub</code> 指定Hub注册服务器；<a target="_blank" rel="noopener" href="http://192.168.104.209:4444/grid/register">http://192.168.104.209:4444/grid/register</a></li>
-<li><code>-port</code> 指定本地node节点的所用的端口号</li>
-<li><code>-hubConfig</code> 指定配置文件；可以把所有配置参数放到配置文件里面</li>
-<li><code>-browser</code> 可以指定浏览器</li>
-</ul>
-<blockquote>
-<p>默认情况下，Node节点允许并发使用11个浏览器…: 5个Firefox, 5个Chrome, 1个Internet Explorer。默认情况下，并发测试的最大数量设置为5。要更改此设置和其他浏览器设置，可以将参数传入每个-browser开关(每个开关表示基于参数的节点)。如果使用-browser参数，默认浏览器将被忽略.</p>
-</blockquote>
-<p>Node节点启动成功之后我们在命令行窗口能看到注册成功的信息</p>
-<p><img src="/uploads/image/2019/08/Node-start.png" alt="Node-start"></p>
-<p>切换到<code>Hub-console</code>刷新信息；可以看到我们的Node节点已上线啦</p>
-<p><img src="/uploads/image/2019/08/Node-console.png" alt="Node-console"></p>
-<h3 id="编写第一个测试脚本"><a href="#编写第一个测试脚本" class="headerlink" title="编写第一个测试脚本"></a>编写第一个测试脚本</h3><p>接下来我们会写一个简单的测试脚本、让其在Node节点上执行</p>
-<pre><code>from selenium import webdriver
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-driver = webdriver.Remote(
-    command_executor=&#39;http://192.168.104.209:4444/wd/hub&#39;,
-    desired_capabilities=DesiredCapabilities.FIREFOX)
-
-driver.get(&quot;http://www.baidu.com&quot;)
-driver.find_element_by_id(&quot;kw&quot;).send_keys(&quot;Selenium&quot;)
-driver.find_element_by_id(&quot;su&quot;).click()
-</code></pre>
-<ul>
-<li>这段代码中我们连接Hub服务</li>
-<li>并配置使用Firefox浏览器来执行功能；</li>
-<li>然后由Hub来分配Node节点去执行用例、当然这里我们只有一个Node节点</li>
-<li>访问百度、在输入框里面输入<code>selenium</code>，然后点击搜索按钮</li>
-</ul>
-<p>通过下面的视频我们看一下selenium-Grid的效果</p>
-<p><img src="/uploads/image/2019/08/Selenium-Grid-case1.gif" alt="第一个Grid用例效果"></p>
-<h3 id="我们在写一个多Node节点的用例"><a href="#我们在写一个多Node节点的用例" class="headerlink" title="我们在写一个多Node节点的用例"></a>我们在写一个多Node节点的用例</h3><p>这次我们在192.168.104.172这台Node节点机器上开2个Node节点;</p>
-<p>一台机器上可以开无数个Node节点、只要port区分开就可以</p>
-<p>下面的启动命令我们用6666 和7777 2个端口启动了2个Node节点</p>
-<pre><code>start java -jar selenium-server-standalone-3.141.59.jar -role node  -hub http://192.168.104.209:4444/grid/register -port 6666
-start java -jar selenium-server-standalone-3.141.59.jar -role node  -hub http://192.168.104.209:4444/grid/register -port 7777
-</code></pre>
-<p>这样一来我们就有2个Node节点了</p>
-<p><img src="/uploads/image/2019/08/Node-2.png" alt="2个Node节点"></p>
-<p>修改一下我们的测试代码</p>
-<pre><code>from selenium import webdriver
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-nodes=&#123;&#39;http://192.168.104.172:6666/wd/hub&#39;:&#39;chrome&#39;,
-       &#39;http://192.168.104.172:7777/wd/hub&#39;:&#39;firefox&#39;&#125;
-
-for host,browser in nodes.items():
-    print(host,browser)
-    driver=webdriver.Remote(command_executor=host,
-                        desired_capabilities=&#123;&#39;browserName&#39;:browser&#125;)
-driver.get(&#39;http://www.baidu.com&#39;)
-driver.find_element_by_id(&#39;kw&#39;).send_keys(browser)
-driver.find_element_by_id(&#39;su&#39;).click()
-</code></pre>
-<p>这段代码也很简单、功能如下</p>
-<ul>
-<li>list里面是我们创建的2个Node节点地址</li>
-<li>用循环取出来、然后执行命令</li>
-<li>一个Node节点用Crhome浏览器、另外一个Node节点用Firefox</li>
-<li>访问百度、搜索关键词</li>
-</ul>
-<p>我们来看一下运行效果、这次就只录制了Node节点机器的视频</p>
-<p><img src="/uploads/image/2019/08/Selenium-Grid-case2.gif" alt="多Node节点用例效果"></p>
-<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>Selenium Grid是Selenium的一个组件、所以核心还是Selenium；</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul>
-<li><a href="http://hiadmin.org/2017/12/26/selenium-past-and-present/" target="_blank">Selenium的前世今生</a></li>
-<li><a href="https://www.seleniumhq.org/docs/07_selenium_grid.jsp" target="_blank">Selenium Grid官网文档</a></li>
-</ul>
-<h3 id="文章中用到的软件"><a href="#文章中用到的软件" class="headerlink" title="文章中用到的软件"></a>文章中用到的软件</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/chromedriver/">Chrome浏览器驱动</a></li>
-<li><a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/geckodriver/">Firefox浏览器驱动</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.seleniumhq.org/download/">Selenium-Grid下载地址</a></li>
-<li><a target="_blank" rel="noopener" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java-SDK下载</a></li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/08/02/Selenium-Grid/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -500,10 +347,16 @@ driver.find_element_by_id(&#39;su&#39;).click()
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-07-30 09:22:56 / 修改时间：09:13:58" itemprop="dateCreated datePublished" datetime="2019-07-30T09:22:56+08:00">2019-07-30</time>
+              <time title="创建时间：2019-07-30 09:22:56" itemprop="dateCreated datePublished" datetime="2019-07-30T09:22:56+08:00">2019-07-30</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-15 23:05:37" itemprop="dateModified" datetime="2021-07-15T23:05:37+08:00">2021-07-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -536,87 +389,14 @@ driver.find_element_by_id(&#39;su&#39;).click()
 </blockquote>
 <pre><code>原本以后对话到此结束了、提问者自己去Google一下就能知道该怎么做了、可是半小时之后提问者再次在群里提问
 </code></pre>
-<blockquote>
-<p>提问者： import paramiko 这个可以吗</p>
-<p>其他群成员：这大哥天天问的都是一些奇怪的问题、你import一个库，也要问别人可以不可以。。</p>
-</blockquote>
-<p>当然这个提问者、到最后也没人在回答他的问题；</p>
-<p>所以我翻出一篇2004写的老文章<code>How To Ask Questions The Smart Way</code>;这篇文章的最新版本是3.9；也就是2014年更新。</p>
-<p>原作者是Eric S. Raymond，这篇文章在黑客界拥有很高的地位，指引无数黑客前进；</p>
-<p>原文比较长、我把重要的核心的内容提炼出来、希望对所有人有帮助。</p>
-<h3 id="提问前需要做的事情"><a href="#提问前需要做的事情" class="headerlink" title="提问前需要做的事情"></a>提问前需要做的事情</h3><pre><code>在通过邮件、讨论组、论坛或社区提问之前，请先尝试做以下事情寻找答案
-</code></pre>
-<ul>
-<li>使用论坛、知乎、百度知道、Quaro的搜索功能；</li>
-<li>善用google、百度或其他搜索引擎在网络搜寻；</li>
-<li>阅读说明书或者使用手册；</li>
-<li>阅读网站上[常见问题解答]；</li>
-<li>自己检查或做试验；</li>
-<li>请教熟悉此问题的朋友；</li>
-<li>如果你是程序员，尝试阅读源代码。</li>
-</ul>
-<p>提问时，请先表明你已做了上述事情，这将有助于改变你是懒又肥的寄生虫形象，同时给别人一种你不会浪费别人时间的印象。</p>
-<p>耐心一点，不要指望Google搜索几秒钟就能解决一个复杂的问题。读一下与产品或项目相关的常见问题解答。</p>
-<p>认真地思考，准备好你的问题。草率的提问只能得到草率的回答，甚至得不到回答。</p>
-<p>永远不要假设你能得到问题的答案、你没有为问题付费；</p>
-<h3 id="认真选择提问的论坛、讨论群"><a href="#认真选择提问的论坛、讨论群" class="headerlink" title="认真选择提问的论坛、讨论群"></a>认真选择提问的论坛、讨论群</h3><pre><code>谨慎地要选择提问的地方
-</code></pre>
-<ul>
-<li>张贴与论坛主题无关的问题；</li>
-<li>在面向高级技术问题的论坛上张贴初级的问题，反之亦然；</li>
-<li>在不同的论坛或讨论小组同时张贴同一个问题；</li>
-<li>向非熟人或没有义务解决你问题的人发送私人问题邮件</li>
-</ul>
-<h3 id="用字义清晰、语法标准、拼写正确的语句撰写问题"><a href="#用字义清晰、语法标准、拼写正确的语句撰写问题" class="headerlink" title="用字义清晰、语法标准、拼写正确的语句撰写问题"></a>用字义清晰、语法标准、拼写正确的语句撰写问题</h3><blockquote>
-<p>经验告诉我们，粗心草率的人通常也会粗心草率地思考与编程。回答这些粗心草率者的提问没有什么好处，我们宁可将时<br>间花在其他地方。</p>
-</blockquote>
-<blockquote>
-<p>清楚、正确地表达你的问题非常重要。如果你嫌斟字酌句麻烦，那我们也懒得回复。所以，请稍微花一点点时间组织语<br>言，也用不着太正式和死板──事实上，黑客文化提倡使用非正式词句、网络语言和幽默的语句，同时注意在遣词造句的过<br>程中体现文字的准确性和你思考问题的积极性。</p>
-</blockquote>
-<h3 id="准确简练地描述问题"><a href="#准确简练地描述问题" class="headerlink" title="准确简练地描述问题"></a>准确简练地描述问题</h3><pre><code>问题的描述应该包含以下内容
-</code></pre>
-<ul>
-<li>仔细而清楚地描述你的问题或错误的症状；</li>
-<li>问题发生的环境(主机品牌、操作系统、应用程序，任何相关的)；</li>
-<li>提问前做过的调查研究及对其的理解；</li>
-<li>提问前为确定问题而采取的诊断步骤；</li>
-<li>最近对计算机或软件配置的任何相关改变；</li>
-<li>如果可能，提供在可控环境下重现问题的方法；</li>
-</ul>
-<h3 id="话不在多，好在精炼"><a href="#话不在多，好在精炼" class="headerlink" title="话不在多，好在精炼"></a>话不在多，好在精炼</h3><p>你应该精炼且简要地描述问题，简单地将堆砌代码或罗列数据是没有用的。如果你有一个体积庞大且复杂的测试样本，尝试将其裁剪，越小越好。</p>
-<pre><code>这至少有三个原因
-</code></pre>
-<ul>
-<li><pre><code>    第一：如果你把精力放在简化问题上，你就更有可能得到答案；
-</code></pre>
-</li>
-<li><pre><code>    第二：简化问题会使你更有可能得到一个答案。有用回答。
-</code></pre>
-</li>
-<li><pre><code>    第三：在完善错误报告的过程中，您可以自己开发一个修复程序或解决方法。
-</code></pre>
-</li>
-</ul>
-<h3 id="跪求是不能解决问题的"><a href="#跪求是不能解决问题的" class="headerlink" title="跪求是不能解决问题的"></a>跪求是不能解决问题的</h3><p>有些人明白用傲慢的方式提问是得不到答复的，所以他们走了另一个极端，转而低声下气地哀求：</p>
-<p>有的论坛专门设置了新手提问区，如果你真的认为遇到了新手该遇到的问题，直接到那去提问就好，别再跪求了。</p>
-<h3 id="明确你的问题"><a href="#明确你的问题" class="headerlink" title="明确你的问题"></a>明确你的问题</h3><p>明确的告诉受访者、你需要得到什么样的帮助、提供思路？提供解决方案？还是直接提供代码片段？</p>
-<h3 id="问题解决后，对解决方案做一个简短的说明"><a href="#问题解决后，对解决方案做一个简短的说明" class="headerlink" title="问题解决后，对解决方案做一个简短的说明"></a>问题解决后，对解决方案做一个简短的说明</h3><p>在问题解决后向所有帮助过的人回复一条信息，让他们知道问题是如何解决的并再次感谢</p>
-<p>这种后续的跟进信息不仅是礼貌的回复，而且是内容的分享，因为这些后续的解决方案会帮助其他有同样问题的人，他们会在论坛中找到你的解决方案，并因此受益。</p>
-<p>最后、考虑到将来也会有人面临类似的问题，如何避免重蹈覆辙呢？你可以自己写一篇文章或者对FAQ进行补充；比如我这篇文章。</p>
-<h3 id="回到我们最开始的提问者"><a href="#回到我们最开始的提问者" class="headerlink" title="回到我们最开始的提问者"></a>回到我们最开始的提问者</h3><pre><code>如果能修改一下提问的内容、那么得到的回答的机率会直线上升
-</code></pre>
-<p>提问者：我想用Python来远程操作一台windows服务器、获取一下指定文件夹下的文件、并执行它；<br>提问者：前面有一个前辈/友人提供了一个思路用<code>PowerShell </code>配合<code>WS-Management</code>协议；我在用<code>paramiko</code>第三方库的时候遇到点问题、babababababa?<br>请问：大家有没有遇到和我一样的问题、或者有其他的解决方案呀？</p>
-<pre><code>对于看到这个问题的人来说
-</code></pre>
-<ul>
-<li>1、问题明确、想远程执行Windows服务器上执行文件</li>
-<li>2、在用<code>paramiko</code>第三方库来做这个事情、但是遇到点问题</li>
-</ul>
-<p>这样以来、用过<code>paramiko</code>库的人可能会给他一些建议；<br>如果有人用Python远程执行过windows上的执行文件也是可以提供另外的解决思路；</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul>
-<li><a target="_blank" rel="noopener" href="http://www.catb.org/~esr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a></li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/07/30/smart-questions/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -658,10 +438,16 @@ driver.find_element_by_id(&#39;su&#39;).click()
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-07-18 19:22:56 / 修改时间：20:17:04" itemprop="dateCreated datePublished" datetime="2019-07-18T19:22:56+08:00">2019-07-18</time>
+              <time title="创建时间：2019-07-18 19:22:56" itemprop="dateCreated datePublished" datetime="2019-07-18T19:22:56+08:00">2019-07-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-15 23:05:55" itemprop="dateModified" datetime="2021-07-15T23:05:55+08:00">2021-07-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -689,34 +475,14 @@ driver.find_element_by_id(&#39;su&#39;).click()
 <pre><code>GetFolder()和GetFile()都可以获取到当前目录
 </code></pre>
 <p>这2种获取当前文件目录的差距还有那么一点点的大；</p>
-<h3 id="VBS获取当前目录"><a href="#VBS获取当前目录" class="headerlink" title="VBS获取当前目录"></a>VBS获取当前目录</h3><p><code>GetFolder()</code>代码如下</p>
-<pre><code>Set Ws = CreateObject(&quot;Scripting.FileSystemObject&quot;)
-&#39;获取当前脚本路径   
-currentpath = Ws.GetFolder(&quot;.&quot;).Path
-msgbox currentpath
-</code></pre>
-<p><code>GetFile()</code>代码如下</p>
-<pre><code>Set Ws = CreateObject(&quot;Scripting.FileSystemObject&quot;)
-&#39;获取当前脚本路径
-currentpath = Ws.GetFile(Wscript.ScriptFullName).ParentFolder.Path
-msgbox currentpath
-</code></pre>
-<p>我们的脚本路径是<code>E:\VBS\test.vbs</code>,那么获取到的工作目录应该是<code>E:\VBS</code>;写完代码我们来运行看一下效果；</p>
-<p>一般情况下运行VBS或者BAT脚本的方式无非就是双击直接运行、在Win+R窗口运行、或者是在CMD命令行中运行；<br>接下来我们就3种模式下测试一下2种获取目录的方式有什么不一样</p>
-<h3 id="我们先看看GetFolder-的具体效果"><a href="#我们先看看GetFolder-的具体效果" class="headerlink" title="我们先看看GetFolder()的具体效果"></a>我们先看看GetFolder()的具体效果</h3><h4 id="先直接双击运行vbs脚本"><a href="#先直接双击运行vbs脚本" class="headerlink" title="先直接双击运行vbs脚本"></a>先直接双击运行vbs脚本</h4><p><img src="/uploads/image/2019/07/001%E7%9B%B4%E6%8E%A5%E8%BF%90%E8%A1%8C.gif" alt="直接运行vbs脚本"></p>
-<p>当我们直接运行VBS脚本的情况下获取到的当前目录的确是<code>E:\VBS</code></p>
-<h4 id="在Win-R的运行窗口运行看看"><a href="#在Win-R的运行窗口运行看看" class="headerlink" title="在Win+R的运行窗口运行看看"></a>在Win+R的运行窗口运行看看</h4><p><img src="/uploads/image/2019/07/002win+R%E8%BF%90%E8%A1%8CVBS.gif" alt="Win+R窗口运行vbs脚本"></p>
-<p>这个时候得到的结果也是<code>E:\VBS</code></p>
-<h4 id="CMD命令行"><a href="#CMD命令行" class="headerlink" title="CMD命令行"></a>CMD命令行</h4><p><img src="/uploads/image/2019/07/003cmd%E4%B8%8B%E8%BF%90%E8%A1%8Cvbs.gif" alt="CMD命令行运行vbs脚本"></p>
-<p>当我们在CMD命令行下运行VBS脚本的时候、就出现了不一样的情况了；<br>返回的结果居然是<code>C:\Users\Administrator</code>；可以看到这个路径和我打开的CMD命令行窗口的当前工作目录是一样的；<br>而我们希望得到的是<code>test.vbs</code>的目录</p>
-<h3 id="接下来我们看一下GetFile-的实际效果"><a href="#接下来我们看一下GetFile-的实际效果" class="headerlink" title="接下来我们看一下GetFile()的实际效果"></a>接下来我们看一下GetFile()的实际效果</h3><p><img src="/uploads/image/2019/07/004%E7%9B%B4%E6%8E%A5%E8%BF%90%E8%A1%8C.gif" alt="直接运行vbs脚本"></p>
-<p>当我们直接运行VBS脚本的情况下获取到的当前目录的确是<code>E:\VBS</code></p>
-<h4 id="在Win-R的运行窗口运行看看-1"><a href="#在Win-R的运行窗口运行看看-1" class="headerlink" title="在Win+R的运行窗口运行看看"></a>在Win+R的运行窗口运行看看</h4><p><img src="/uploads/image/2019/07/005Win+R%E8%BF%90%E8%A1%8C.gif" alt="Win+R窗口运行vbs脚本"><br>这个时候得到的结果也是<code>E:\VBS</code></p>
-<h4 id="CMD命令行-1"><a href="#CMD命令行-1" class="headerlink" title="CMD命令行"></a>CMD命令行</h4><p><img src="/uploads/image/2019/07/006CMD%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8C.gif" alt="CMD命令行运行vbs脚本"><br>这个时候得到的结果还是<code>E:\VBS</code></p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://www.w3cschool.cn/vbscript/">VBS教程</a></li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/07/18/VBS%E8%84%9A%E6%9C%AC%E8%8E%B7%E5%8F%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E7%9A%842%E7%A7%8D%E6%96%B9%E5%BC%8F/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -758,10 +524,16 @@ msgbox currentpath
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-06-04 19:01:25 / 修改时间：19:20:57" itemprop="dateCreated datePublished" datetime="2019-06-04T19:01:25+08:00">2019-06-04</time>
+              <time title="创建时间：2019-06-04 19:01:25" itemprop="dateCreated datePublished" datetime="2019-06-04T19:01:25+08:00">2019-06-04</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-15 23:05:06" itemprop="dateModified" datetime="2021-07-15T23:05:06+08:00">2021-07-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -788,126 +560,14 @@ msgbox currentpath
 <p>在Selenium2时代、Selenium IDE基本上都没有更新；</p>
 <p>虽然Selenium2已经可以接入robot framework、可以在Airtest中使用；但是还是有很多初入自动化的同学想用selenium IDE来实现一些简单的自动化操作；</p>
 <p>所以在2018年8月份的时候、Selenium项目组重新开始维护Selenium IDE版本、并且支持Chrome和Firefox浏览器</p>
-<blockquote>
-<p>由于新版Selenium IDE出来时间不长、所以网上的资料着实不多、所以我准备写一些Selenium IDE相关的内容、就当是自己学习Selenium IDE时留下的笔记了；</p>
-</blockquote>
-<h3 id="在Firefox上安装Selenium-IDE工具"><a href="#在Firefox上安装Selenium-IDE工具" class="headerlink" title="在Firefox上安装Selenium IDE工具"></a>在Firefox上安装Selenium IDE工具</h3><p>前面说过Selenium IDE支持Chrome和Firefox、为什么我要用firefox来写文章；<br>还不是因为Chrome安装插件需要科学上网才能安装、而firefox安装插件可是在国内就能正常安装的哦。</p>
-<ul>
-<li>启动Mozilla Firefox浏览器</li>
-<li>切换到firefox官方插件要么</li>
-<li>搜索selenium ide</li>
-<li>点击添加按钮</li>
-</ul>
-<p><img src="/uploads/image/2019/06/install.png"></p>
-<ul>
-<li>在弹出的提示框点击确定</li>
-<li>安装完成之后firefox右上角会出现一个selenium IDE的图标</li>
-</ul>
-<p><img src="/uploads/image/2019/06/installdone.png"></p>
-<ul>
-<li>点击SE图标、启动Selenium IDE工具</li>
-<li>第一次我们选择“Create a new project”</li>
-</ul>
-<p><img src="/uploads/image/2019/06/start.png"></p>
-<h3 id="Selenium-IDE主界面"><a href="#Selenium-IDE主界面" class="headerlink" title="Selenium IDE主界面"></a>Selenium IDE主界面</h3><p>我们看一下下面的IDE主界面</p>
-<p><img src="/uploads/image/2019/06/SeleniumIDE.png"></p>
-<p>Selenium IDE分为不同的组件，每个组件都有自己的特性和功能。这里对Selenium IDE的七个不同组件进行了分类，其中包括:</p>
-<ul>
-<li>菜单栏</li>
-<li>工具栏</li>
-<li>地址栏</li>
-<li>测试案例窗口</li>
-<li>测试脚本编辑器框</li>
-<li>开始/停止录制按钮</li>
-<li>日志，引用窗口</li>
-</ul>
-<h4 id="菜单栏"><a href="#菜单栏" class="headerlink" title="菜单栏"></a>菜单栏</h4><pre><code>菜单栏位于Selenium IDE界面的最顶部。 最常用的菜单栏模块包括:
-</code></pre>
-<ul>
-<li>创建项目<ul>
-<li>它用于创建一个新项目。</li>
-</ul>
-</li>
-<li>打开项目<ul>
-<li>从本地磁盘打开一个项目</li>
-</ul>
-</li>
-<li>保存项目<ul>
-<li>保存项目到本地磁盘</li>
-</ul>
-</li>
-</ul>
-<h4 id="工具栏"><a href="#工具栏" class="headerlink" title="工具栏"></a>工具栏</h4><pre><code>工具栏包含用于控制测试用例执行的模块。 此外，它还为提供了调试测试用例的步骤功能
-</code></pre>
-<ul>
-<li>运行所有用例<ul>
-<li>它用于在加载具有多个测试用例的测试套件时运行整个测试套件。</li>
-</ul>
-</li>
-<li>运行单个用例<ul>
-<li>它用于运行当前选定的测试用例。 只加载一个测试，运行测试， 按钮和运行全部，按钮具有相同的效果。</li>
-</ul>
-</li>
-<li>步骤功能<ul>
-<li>它用于进入步骤，通过测试用例一次运行一个命令。用于调试测试用例</li>
-</ul>
-</li>
-<li>速度控制选项<ul>
-<li>它用于控制测试用例的执行速度。</li>
-</ul>
-</li>
-</ul>
-<h4 id="测试用例窗口"><a href="#测试用例窗口" class="headerlink" title="测试用例窗口"></a>测试用例窗口</h4><pre><code>此模块显示所有的测试用例
-</code></pre>
-<ul>
-<li>可以创建单个用例</li>
-<li>创建用例集合</li>
-<li>查看执行中的用例</li>
-</ul>
-<h4 id="测试脚本编辑区"><a href="#测试脚本编辑区" class="headerlink" title="测试脚本编辑区"></a>测试脚本编辑区</h4><pre><code>“测试脚本编辑器区”显示IDE记录的所有测试脚本和用户交互。 每个用户交互的显示顺序与执行顺序相同。 “编辑器”框分为三列:命令，目标和值以及描述
-</code></pre>
-<ul>
-<li><p>命令</p>
-<ul>
-<li>Command 可以将命令视为在浏览器元素上执行的实际操作/操作。 例如，如果要打开一个新URL，该命令是:open </li>
-</ul>
-</li>
-<li><p>目标</p>
-<ul>
-<li>Target 指定必须在其上执行操作的web元素以及locator属性。 例如，如果打开<a target="_blank" rel="noopener" href="https://www.sogou.com/">https://www.sogou.com/</a></li>
-</ul>
-</li>
-<li><p>值</p>
-<ul>
-<li>Value 值被视为可选字段，可在需要发送一些实际参数时使用。例如我们要在输入框里面输入 selenium ide；那么Value 这里就填写 selenium ide</li>
-</ul>
-</li>
-<li><p>描述</p>
-<ul>
-<li>Description 用于描述这条命令的一些说明文字；你可以理解是备注</li>
-</ul>
-</li>
-</ul>
-<p><img src="/uploads/image/2019/06/Command.png"></p>
-<h4 id=""><a href="#" class="headerlink" title=""></a></h4><pre><code>开始/停止录制按钮
-</code></pre>
-<p>当我们不想自己写测试脚本的时候、可以使用录制操作；来记录你在浏览器上的行为；<br>并且会给保存到脚本编辑区</p>
-<h4 id="日志和引用"><a href="#日志和引用" class="headerlink" title="日志和引用"></a>日志和引用</h4><pre><code>日志窗口在执行期间显示运行时消息。 它提供IDE执行的操作的实时更新。 它可以分为四种类型：信息，错误，调试和警告。
-</code></pre>
-<p><img src="/uploads/image/2019/06/logging.png"></p>
-<h4 id="完整的一个录制回放展示"><a href="#完整的一个录制回放展示" class="headerlink" title="完整的一个录制回放展示"></a>完整的一个录制回放展示</h4><ul>
-<li>录制操作</li>
-</ul>
-<p><img src="/uploads/image/2019/06/luzhi.gif"></p>
-<ul>
-<li>回放操作</li>
-</ul>
-<p><img src="/uploads/image/2019/06/huifang.gif"></p>
-<h3 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h3><ul>
-<li><a target="_blank" rel="noopener" href="http://hiadmin.org/2017/12/26/selenium-past-and-present/">Selenium的前世今生</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.seleniumhq.org/selenium-ide/docs/en/introduction/getting-started/">SeleniumIDE官方文档</a></li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/06/04/Selenium-IDE/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -949,10 +609,16 @@ msgbox currentpath
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-04-27 15:55:26 / 修改时间：15:53:10" itemprop="dateCreated datePublished" datetime="2019-04-27T15:55:26+08:00">2019-04-27</time>
+              <time title="创建时间：2019-04-27 15:55:26" itemprop="dateCreated datePublished" datetime="2019-04-27T15:55:26+08:00">2019-04-27</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-15 23:04:59" itemprop="dateModified" datetime="2021-07-15T23:04:59+08:00">2021-07-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -978,38 +644,14 @@ msgbox currentpath
 <h3 id="话比较多"><a href="#话比较多" class="headerlink" title="话比较多"></a>话比较多</h3><p>我们都知道Selenium支持Chrome浏览器、而Chrome又是通过Chromium开源项目的商业版本；<br>所以Selenium肯定是支持Chromium浏览器的；<br>好了、我这次要测试的浏览器是用Chromium开源代码、重新换了皮肤的版本；就和360浏览器QQ浏览器一样一样的；</p>
 <p>所以Selenium肯定也是支持所有基于Chromium衍生来的浏览器版本的。</p>
 <p>我的推理就到这里结束了；</p>
-<h3 id="开始实践"><a href="#开始实践" class="headerlink" title="开始实践"></a>开始实践</h3><pre><code>当我们用webdriver.Chrome()却发现没有参数可以配置启动指定的浏览器路径；
-我在Seleniumhq网站上翻遍了都没有找到怎么配置指定的浏览器路径的说明；
-网络搜索了很久、都没有找到怎么样用Selenium来启动360浏览器、Chromium浏览器这样的文章
-</code></pre>
-<h3 id="去Chromium官网找答案"><a href="#去Chromium官网找答案" class="headerlink" title="去Chromium官网找答案"></a>去Chromium官网找答案</h3><pre><code>当我在chromium网站上看到了chromedriver的说明文档；
-里面有解释binary参数、可以指定启动的浏览器执行程序路径
-我就知道这个是我要的参数啦
-</code></pre>
-<p><img src="/uploads/image/2019/04/binary.png" alt="binary说明"></p>
-<h3 id="具体的代码实现"><a href="#具体的代码实现" class="headerlink" title="具体的代码实现"></a>具体的代码实现</h3><pre><code># !/usr/bin/env python3
-# encoding = utf-8
-__author__ = &quot;Sam.huang&quot;
-
-from selenium import webdriver
-
-do_options = webdriver.ChromeOptions()  # 指定浏览器模式chrome/firefox/ie
-do_options.binary_location = r&#39;D:/Cbox/doreadme/doreadme.exe&#39;  #指定路径
-do_options.add_experimental_option(&#39;excludeSwitches&#39;,[&#39;enable-automation&#39;])  # 设置浏览器为开发者模式
-br = webdriver.Chrome(chrome_options=do_options)
-br.get(&#39;http://www.baidu.com&#39;)
-br.quit()
-</code></pre>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
-<li>由于每一个Chromium衍生出来的浏览器使用的Chromium内核版本都可能不一样、所以必须要确保你浏览器的Chromium版本和你的webdriver匹配</li>
-<li>可以去Chromium的网站下载内核对应的webdriver驱动程序</li>
-</ul>
-<p><img src="/uploads/image/2019/04/version.png" alt="Chromium内核版本"></p>
-<h3 id="文章查询的资料"><a href="#文章查询的资料" class="headerlink" title="文章查询的资料"></a>文章查询的资料</h3><ul>
-<li><a target="_blank" rel="noopener" href="http://chromedriver.chromium.org/capabilities">Chromium说明文档的chromedriver部分</a></li>
-<li><a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/chromedriver/">Chromedriver查询下载</a></li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/04/27/Selenium-Chromium/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1059,7 +701,7 @@ br.quit()
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-04-27 15:53:55" itemprop="dateModified" datetime="2019-04-27T15:53:55+08:00">2019-04-27</time>
+                <time title="修改时间：2021-07-15 23:06:15" itemprop="dateModified" datetime="2021-07-15T23:06:15+08:00">2021-07-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1084,70 +726,14 @@ br.quit()
       
           <p>很久很久很久之前写过一个把知乎的收藏夹里面的回答用邮件的方式发送到Evernote/印象笔记/OneNote/有道云笔记的功能；<br>后来一直没有维护、最近发现在Github上有留言、希望能继续维护、因为知乎改版之后那个功能就不能用了。</p>
 <p>以前的版本我是用<code>Requests</code> 和 <code>BeautifulSoup</code>来抓取数据、最近在重新写的时候发现用<code>requests</code>访问知乎时、直接返回个<code>status_code</code> 400; 一点数据都拿不到、应该是做了反爬处理了。</p>
-<h3 id="该selenium上场了"><a href="#该selenium上场了" class="headerlink" title="该selenium上场了"></a>该selenium上场了</h3><pre><code>Selenium是一款用于做Web测试自动化的框架、也就是软件测试工程师用来测试网页在浏览器上是否正常；
-大部分时候用于做Web的回归测试自动化。
-只要人在浏览器上能做的事情、都可以用selenium来实现
-</code></pre>
-<h3 id="第一个selenium登录版本"><a href="#第一个selenium登录版本" class="headerlink" title="第一个selenium登录版本"></a>第一个selenium登录版本</h3><pre><code>思路很简单
-访问：https://www.zhihu.com/signin?next=%2F
-输入帐号和密码
-点击登录按钮就可以了
-</code></pre>
-<p>具体代码、很简单的几行代码就能搞定</p>
-<pre><code>from selenium import webdriver
-url = &#39;https://www.zhihu.com/signin?next=%2F&#39;
-br = webdriver.Chrome()
-br.get(url)
-# 定位帐号密码以及登录按钮位置
-br.find_element_by_name(&#39;username&#39;).send_keys(&#39;sam.hxq@gmail.com&#39;)
-br.find_element_by_name(&#39;password&#39;).send_keys(&#39;密码&#39;)
-br.find_element_by_xpath(&#39;//*[@id=&quot;root&quot;]/div/main/div/div/div/div[2]/div[1]/form/button&#39;).click()
-</code></pre>
-<p>当运行代码的时候发现、帐号密码输入正常、但是点击登录按钮后、一直没有登录上去<br><img src="/uploads/image/2019/04/login.png" alt="selenium登录知乎失败"></p>
-<h3 id="我们来解释一下什么原理"><a href="#我们来解释一下什么原理" class="headerlink" title="我们来解释一下什么原理"></a>我们来解释一下什么原理</h3><p>当我们用selenium访问网站的时候、其实只要简单的一行JS代码就能知道、访问客户端是否是真人；</p>
-<p><code>window.navigator.webdriver</code></p>
-<p>我们在<code>Console</code>下运行上面的代码、看返回值就能知道、如果返回<code>Ture</code>那么说明是用selenium访问；否则会返回<code>undefined</code></p>
-<p>这个是用selenium访问的网站</p>
-<p><img src="/uploads/image/2019/04/selenium.png"></p>
-<p>下面这张是正常打开的</p>
-<p><img src="/uploads/image/2019/04/underfined.png"></p>
-<p>从上面的图片可以看出来、用一行JS代码就可以辨别是否是selenium了、当然就可以很简单的对这些用selenium的请求进行处理。</p>
-<h3 id="下面我们来说说解决方案"><a href="#下面我们来说说解决方案" class="headerlink" title="下面我们来说说解决方案"></a>下面我们来说说解决方案</h3><p>这个时候就需要祭出我们的杀器<code>chromeOptions</code>了</p>
-<h4 id="chromeOptions是啥？"><a href="#chromeOptions是啥？" class="headerlink" title="chromeOptions是啥？"></a>chromeOptions是啥？</h4><pre><code>chromeOptions是一个配置Chrome启动属性的类；
-对应的也有`FirefoxOptions`；就是配置Firefox启动属性的类、大家举一反三的去找selenium支持的浏览器
-</code></pre>
-<h4 id="我们看看chromeOptions能做啥？"><a href="#我们看看chromeOptions能做啥？" class="headerlink" title="我们看看chromeOptions能做啥？"></a>我们看看chromeOptions能做啥？</h4><ul>
-<li>添加扩展应用 (add_extension)</li>
-<li>添加启动参数 (add_argument)</li>
-<li>配置代理(setHttpProxy)</li>
-<li>具体支持的功能可以看<a target="_blank" rel="noopener" href="https://sites.google.com/a/chromium.org/chromedriver/capabilities">ChromeDriver官网</a></li>
-</ul>
-<h4 id="第二个知乎登录代码版本"><a href="#第二个知乎登录代码版本" class="headerlink" title="第二个知乎登录代码版本"></a>第二个知乎登录代码版本</h4><pre><code>from selenium import webdriver
-
-url = &#39;https://www.zhihu.com/signin?next=%2F&#39;
-options = webdriver.ChromeOptions()
-options.add_experimental_option(&#39;excludeSwitches&#39;, [&#39;enable-automation&#39;])   # 设置浏览器为开发者模式
-br = webdriver.Chrome(options=options)
-br.get(url)
-# 定位帐号密码以及登录按钮位置
-br.find_element_by_name(&#39;username&#39;).send_keys(&#39;sam.hxq@gmail.com&#39;)
-br.find_element_by_name(&#39;password&#39;).send_keys(&#39;密码&#39;)
-br.find_element_by_xpath(&#39;//*[@id=&quot;root&quot;]/div/main/div/div/div/div[2]/div[1]/form/button&#39;).click()
-</code></pre>
-<p>运行上面的代码、我们就能开开心心的登录知乎了</p>
-<p><img src="/uploads/image/2019/04/wanmei.png"></p>
-<p>从截图我们看到 Chrome会提示你在用开发者模式运行、不要管他；</p>
-<h3 id="总结一下"><a href="#总结一下" class="headerlink" title="总结一下"></a>总结一下</h3><ul>
-<li>当我们用selenium打开浏览器去访问网站的时候、是带着标识过去的</li>
-<li>网站可以用简单的JS代码就能判别出来是否是selenium</li>
-<li>所以我们可以用<code>chromeOptions</code>配置开发者模式跳过这个问题</li>
-<li>到目前为止 <code>2019-04-19</code> 可以通过此方式登录知乎</li>
-</ul>
-<h3 id="相关网站"><a href="#相关网站" class="headerlink" title="相关网站"></a>相关网站</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://sites.google.com/a/chromium.org/chromedriver/capabilities" title="ChromeOpentios官网">ChromeOpentios官网</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/huaisha1224/zhihu_to_evernote">知乎收藏保存的印象笔记/OneNote</a></li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/04/19/%E7%94%A8Selenium%E7%BB%95%E8%BF%87%E5%8F%8D%E7%88%AC%E6%9C%BA%E5%88%B6%E7%99%BB%E5%BD%95%E7%9F%A5%E4%B9%8E/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1189,10 +775,16 @@ br.find_element_by_xpath(&#39;//*[@id=&quot;root&quot;]/div/main/div/div/div/div
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-04-02 16:15:54 / 修改时间：18:30:43" itemprop="dateCreated datePublished" datetime="2019-04-02T16:15:54+08:00">2019-04-02</time>
+              <time title="创建时间：2019-04-02 16:15:54" itemprop="dateCreated datePublished" datetime="2019-04-02T16:15:54+08:00">2019-04-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-15 23:04:25" itemprop="dateModified" datetime="2021-07-15T23:04:25+08:00">2021-07-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -1222,71 +814,14 @@ br.find_element_by_xpath(&#39;//*[@id=&quot;root&quot;]/div/main/div/div/div/div
 <p>全部卸载MariaDB</p>
 <pre><code>yum -y remove mariadb*
 </code></pre>
-<h4 id="下载Mysql5-7-最新版本"><a href="#下载Mysql5-7-最新版本" class="headerlink" title="下载Mysql5.7 最新版本"></a>下载Mysql5.7 最新版本</h4><p>从Mysql官网下载Mysql源</p>
-<pre><code>wget -P /home/tools http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
-</code></pre>
-<p>安装mysql源</p>
-<pre><code>rpm -Uvh mysql57-community-release-el7-11.noarch.rpm
-</code></pre>
-<p>添加配置；<code>vim /etc/yum.repos.d/mysql-community.repo</code></p>
-<pre><code>[mysql57-community]
-name=MySQL 5.7 Community Server
-baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/7/$basearch/
-enabled=1
-gpgcheck=0
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
-</code></pre>
-<p>然后就可以安装 mysql5.7版本啦</p>
-<pre><code>yum install mysql-community-server -y
-</code></pre>
-<h4 id="安装完成"><a href="#安装完成" class="headerlink" title="安装完成"></a>安装完成</h4><p>如果看到下面这样的信息、就说明安装成功啦、进入下一步；</p>
-<pre><code>已安装:
-  mysql-community-server.x86_64 0:5.7.25-1.el7                                            
-
-作为依赖被安装:
-  mysql-community-client.x86_64 0:5.7.25-1.el7
-  mysql-community-common.x86_64 0:5.7.25-1.el7
-  mysql-community-libs.x86_64 0:5.7.25-1.el7
-
-完毕！
-</code></pre>
-<h3 id="配置一下启动MYSQL"><a href="#配置一下启动MYSQL" class="headerlink" title="配置一下启动MYSQL"></a>配置一下启动MYSQL</h3><p>启动MYSQL</p>
-<pre><code>systemctl start mysqld.service
-</code></pre>
-<p>查看状态</p>
-<pre><code>systemctl status mysqld.service
-</code></pre>
-<p>添加开机启动 </p>
-<pre><code>systemctl enabled mysqld.service
-</code></pre>
-<h3 id="MYSQL-修改root用户密码"><a href="#MYSQL-修改root用户密码" class="headerlink" title="MYSQL 修改root用户密码"></a>MYSQL 修改root用户密码</h3><p>首先查看默认密码</p>
-<pre><code>grep &#39;password&#39; /var/log/mysqld.log
-</code></pre>
-<p>拿到默认密码之后登录mysql</p>
-<pre><code>mysql -u root -p 
-</code></pre>
-<p>修改密码</p>
-<pre><code>ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;Abcd#123&#39;;
-</code></pre>
-<h3 id="开启远程访问"><a href="#开启远程访问" class="headerlink" title="开启远程访问"></a>开启远程访问</h3><p>前面的步骤完成之后我们想在windows电脑上用Navicat来连接的时候、发现是连不上的；</p>
-<p>一般来说你的帐号不允许从远程登陆，这个时候只要在<code>localhost</code>的那台服务器，登入<code>mysql</code>，<br>更改 <code>mysql</code> 数据库里的 <code>user</code> 表里的 <code>host</code> 项，从<code>localhost</code>改称<code>%</code>就能远程访问了！</p>
-<pre><code>[root@localhost ~]# mysql -u root -p 
-mysql&gt;use mysql; 
-mysql&gt;update user set host = &#39;%&#39; where user = &#39;root&#39;; 
-mysql&gt;select host, user from user;
-mysql&gt;flush privileges;
-</code></pre>
-<p>到此 可以用你的<code>Navicat</code>等工具来远程连接MYSQL服务器啦</p>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol>
-<li>如果提示<code>获取 GPG 密钥失败</code>; 请修改<code>gpgcheck=0</code>即可、也就是不检查了</li>
-<li>MYSQL的repo网站上可以下载你需要的所有版本的源、请自行选择即可</li>
-<li>如果打开<code>mysql-community.repo</code>的文件默认有内容、那么就直接修改、将你需要安装的版本下的<code>enabled=1</code>即可。</li>
-</ol>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/">MySQL官方安装指南</a></li>
-<li><a target="_blank" rel="noopener" href="http://repo.mysql.com/">Mysql源</a></li>
-</ol>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/04/02/CentOS7-Yum-Install-Mysql/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1336,7 +871,7 @@ mysql&gt;flush privileges;
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-04-27 15:54:48" itemprop="dateModified" datetime="2019-04-27T15:54:48+08:00">2019-04-27</time>
+                <time title="修改时间：2021-07-15 23:06:00" itemprop="dateModified" datetime="2021-07-15T23:06:00+08:00">2021-07-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1363,72 +898,14 @@ mysql&gt;flush privileges;
 <p>由于文本编辑器和PyCharm这类IDE还是有不少区别、所以我们在使用文本编辑器的时候都需要按照自己的喜好来进行各种配置；</p>
 <p>很大部分的配置我们可以直接在VSCode内置的功能里面得到满意的解决方案、如果你不喜欢原生的可以安装插件来解决</p>
 <p>下面是我在用VSCode写Python代码时候用的一些配置和插件</p>
-<h2 id="一：VSCode配置"><a href="#一：VSCode配置" class="headerlink" title="一：VSCode配置"></a>一：VSCode配置</h2><h3 id="安装VSCode的Python支持"><a href="#安装VSCode的Python支持" class="headerlink" title="安装VSCode的Python支持"></a>安装VSCode的Python支持</h3><pre><code>默认情况下你是不能直接在VSCode里面运行Python代码的、需要安装一下插件
-</code></pre>
-<ol>
-<li> 在扩展里面输入Python 选择安装</li>
-<li> 重启VSCode即可</li>
-</ol>
-<h3 id="代码长度显示虚线"><a href="#代码长度显示虚线" class="headerlink" title="代码长度显示虚线"></a>代码长度显示虚线</h3><pre><code>我们在学习写代码的第一天开始就有前辈教导我们代码长度控制到80以内、虽然现在显示器越来越大；
-但是代码长度还是要做一些控制为好
-</code></pre>
-<ol>
-<li>文件-&gt;首选项-&gt;用户设置，</li>
-<li>在settings.json文件中输入<code>&quot;editor.rulers&quot;: [120],</code></li>
-<li>我这里配置的长度是120；会在编辑器120处有一条竖着的虚线、非常的直观</li>
-</ol>
-<h3 id="设置字体和字号"><a href="#设置字体和字号" class="headerlink" title="设置字体和字号"></a>设置字体和字号</h3><pre><code>把字体设置到自己喜欢的字号
-</code></pre>
-<ol>
-<li>文件-&gt;首选项-&gt;用户设置，</li>
-<li>在字体选项处</li>
-<li>选择字体和字号</li>
-</ol>
-<p>接着我们就可以开箱写Python代码啦、如果想更方便的书写、那么我们需要安装一下插件</p>
-<h2 id="二：VSCode插件"><a href="#二：VSCode插件" class="headerlink" title="二：VSCode插件"></a>二：VSCode插件</h2><h3 id="代码缩进参考"><a href="#代码缩进参考" class="headerlink" title="代码缩进参考"></a>代码缩进参考</h3><p>由于Python使用缩进来区分代码块、所以有缩进虚线阅读起来会非常的优美。</p>
-<pre><code>插件名称：Guides
-</code></pre>
-<p><img src="/uploads/image/2019/02/Guides.png"></p>
-<h3 id="代码颜色"><a href="#代码颜色" class="headerlink" title="代码颜色"></a>代码颜色</h3><p>如果你想让def和class显示不同的颜色、那么就需要安装一个插件来解决了</p>
-<pre><code>插件名称：Hopscotch
-</code></pre>
-<p>效果图：<br><img src="/uploads/image/2019/02/Hopscotch.png"></p>
-<h3 id="中文语言包"><a href="#中文语言包" class="headerlink" title="中文语言包"></a>中文语言包</h3><p>如果你想VBSCode显示中文的话、那么我们需要安装一下语言包<br>    插件名称：Chinese (Simplified) Language</p>
-<ol>
-<li> 打开VScode，文件-&gt;首选项-&gt;用户设置，</li>
-<li> 输入 “config” 筛选可用命令列表</li>
-<li> 最后选择配置语言命令在 locale.json 中添加 “locale”: “zh-cn”，即可载入中文（简体）语言包。</li>
-</ol>
-<p><img src="/uploads/image/2019/02/zh-cn.png"></p>
-<h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>VSCode自带的主题用着怎么也不爽、所以想着换一个、找了很久之后遇到了One Dark Pro</p>
-<pre><code>插件名称：One Dark Pro
-
-安装之后在主题里面选择One Dark Pro即可
-</code></pre>
-<p>![](/uploads/image/2019/02/One Dark Pro.png)</p>
-<h3 id="显示图标"><a href="#显示图标" class="headerlink" title="显示图标"></a>显示图标</h3><pre><code>文件图标集，支持绝大部分文件类型；给不同类型的文件显示不同的图标
-
-插件名称：vscode-icons
-</code></pre>
-<p><img src="/uploads/image/2019/02/vscode-icons.gif"></p>
-<h3 id="代码错误提示-flake8"><a href="#代码错误提示-flake8" class="headerlink" title="代码错误提示 flake8"></a>代码错误提示 flake8</h3><pre><code>安装flake8之后写代码的时候编辑器就会提示哪里出错，代码格式不规范也会提示
-</code></pre>
-<ol>
-<li> 打开命令行</li>
-<li> 输入 “pip install flake8”</li>
-<li> 安装flake8成功后，打开VScode，文件-&gt;首选项-&gt;用户设置，</li>
-<li> 在settings.json文件中输入”python.linting.flake8Enabled”: true</li>
-</ol>
-<h3 id="自动格式化代码yapf"><a href="#自动格式化代码yapf" class="headerlink" title="自动格式化代码yapf"></a>自动格式化代码yapf</h3><pre><code>安装yapf之后在VScode中按Alt+Shift+F即可自动格式化代码
-</code></pre>
-<ol>
-<li> 打开命令行</li>
-<li> 输入 “pip install yapf”</li>
-<li> 安装yapf成功后，打开VScode，文件-&gt;首选项-&gt;用户设置，</li>
-<li> 在settings.json文件中输入”python.formatting.provider”: “yapf”</li>
-</ol>
-<h2 id="三：附上-翻译的VSCode快捷键中文版、可以打印成图片哦"><a href="#三：附上-翻译的VSCode快捷键中文版、可以打印成图片哦" class="headerlink" title="三：附上 翻译的VSCode快捷键中文版、可以打印成图片哦"></a>三：附上 翻译的VSCode快捷键中文版、可以打印成图片哦</h2><p><img src="https://camo.githubusercontent.com/a31c9ed06ff5d2afc33d0171e9daf89f11617507/68747470733a2f2f692e696d6775722e636f6d2f61566854354d432e706e67" alt="VSCode快捷键中文版"></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/02/13/VSCode-for-Python/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1478,7 +955,7 @@ mysql&gt;flush privileges;
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-04-27 15:55:39" itemprop="dateModified" datetime="2019-04-27T15:55:39+08:00">2019-04-27</time>
+                <time title="修改时间：2021-07-15 23:04:36" itemprop="dateModified" datetime="2021-07-15T23:04:36+08:00">2021-07-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1506,93 +983,14 @@ mysql&gt;flush privileges;
 <h4 id="三原色-RGB"><a href="#三原色-RGB" class="headerlink" title="三原色(RGB)"></a>三原色(RGB)</h4><blockquote>
 <p>我们在显示器上看到的所有色彩都是红绿蓝三种颜色调和而成<br>下图经典的三原色图片</p>
 </blockquote>
-<p><img src="/uploads/image/2019/01/RGB.png" alt="三原色"></p>
-<h4 id="颜色值"><a href="#颜色值" class="headerlink" title="颜色值"></a>颜色值</h4><blockquote>
-<p>颜色值用十六进制来表示<br>每个颜色的最低值为 0(十六进制为 00)，最高值为 255(十六进制为FF)<br>十六进制值的写法 #FFFFFF</p>
-</blockquote>
-<p><img src="/uploads/image/2019/01/FFFF.png" alt="颜色值"></p>
-<p>更多关于三原色的信息大家可以自行Google</p>
-<h4 id="像素"><a href="#像素" class="headerlink" title="像素"></a>像素</h4><blockquote>
-<p>像素是视频显示的基本单位、也就是屏幕上的最小单位</p>
-</blockquote>
-<p><strong>给大家一个例子</strong></p>
-<p>这是QQ的ICO图标</p>
-<p><img src="/uploads/image/2019/01/QQ.png"></p>
-<p>然后放大到最大化</p>
-<p><img src="/uploads/image/2019/01/bigQQ.png"></p>
-<p>图片里面一个一个小方块就是像素；而像素里面又包含了颜色值。</p>
-<h3 id="终于可以说颜色识别的原理了"><a href="#终于可以说颜色识别的原理了" class="headerlink" title="终于可以说颜色识别的原理了"></a>终于可以说颜色识别的原理了</h3><ul>
-<li>通过像素的颜色值在屏幕上找到目标</li>
-<li>然后返回目标坐标值</li>
-<li>模拟鼠标键盘进行操作</li>
-<li>并通过颜色识别做断言</li>
-</ul>
-<h3 id="有了理论基础-我们开始实践"><a href="#有了理论基础-我们开始实践" class="headerlink" title="有了理论基础 我们开始实践"></a>有了理论基础 我们开始实践</h3><p>如果你想用颜色识别来做自动化、那么<code>按键精灵</code>和<code>大漠插件</code>是目前最好用最稳定的实现方案。<br>接下来的操作是用<code>大漠插件</code>实现的<br><img src="/uploads/image/2019/01/DM.png"></p>
-<ul>
-<li> 用大漠插件工具加载图片</li>
-<li> 然后取色</li>
-<li> 当二值化区域能清晰的看到我们要找的目标时、就说明这个颜色值可以在屏幕上找到目标</li>
-<li> 复制颜色值代码、我们要开始写代码了</li>
-</ul>
-<p>下面是代码</p>
-<pre><code>#! /usr/bin/env python3
-# encoding:utf-8
-import time
-import pyautogui
-import win32com.client
-import win32api
-# 找登录按钮
-login = dm.FindMultiColor(
-    0, 0, 1200, 750, &quot;96966d&quot;,
-    &quot;6|0|d2d38a,0|10|c8c698,9|10|e7da98,16|0|e7da98,17|5|96ac7d,18|10|daac2f&quot;,
-    0.8, 1)
-print(&quot;找到登录按钮坐标：&quot;, login)
-if login[0] &gt; 0:
-    intX, intY = login[1:]
-    pyautogui.moveTo(intX, intY )  # 登录按钮位置
-    pyautogui.click()
-    pyautogui.PAUSE = 0.5
-</code></pre>
-<p>上面的代码就实现了一个功能</p>
-<ul>
-<li>  通过颜色值在屏幕固定区域查找匹配</li>
-<li>  匹配之后返回坐标值</li>
-<li>  移动鼠标到指定位置</li>
-<li>  实现点击功能</li>
-</ul>
-<h3 id="看下代码执行效果"><a href="#看下代码执行效果" class="headerlink" title="看下代码执行效果"></a>看下代码执行效果</h3><p><img src="/uploads/image/2019/01/shili.gif" alt="大漠插件多点找色"></p>
-<h3 id="大漠插件颜色识别函数介绍"><a href="#大漠插件颜色识别函数介绍" class="headerlink" title="大漠插件颜色识别函数介绍"></a>大漠插件颜色识别函数介绍</h3><p>其实我们这里用到的最最主要的就这个方法<code>FindMultiColor()</code></p>
-<p><img src="/uploads/image/2019/01/DMpig.png" alt="大漠插件多点找色"></p>
-<p><strong>核心代码就这几行、简单介绍一下步骤</strong></p>
-<ul>
-<li>传递区域坐标、多点找色颜色值、匹配度0.8，查找方向是1也就是从左到右,从下到上</li>
-<li>判断返回值是否大于0</li>
-<li>返回值如果大于0 说明通过颜色值找到目标位置</li>
-<li>获取坐标位置</li>
-<li><code>moveTo()</code>移动鼠标到目标坐标</li>
-<li>实现点击操作</li>
-</ul>
-<h3 id="写个UI自动化用例"><a href="#写个UI自动化用例" class="headerlink" title="写个UI自动化用例"></a>写个UI自动化用例</h3><p><img src="/uploads/image/2019/01/shili2.gif"></p>
-<p>上面的视频里面有2个自动化用例</p>
-<ol>
-<li> 自动登录</li>
-<li> 兑换一个物品</li>
-</ol>
-<h3 id="颜色识别的优势"><a href="#颜色识别的优势" class="headerlink" title="颜色识别的优势"></a>颜色识别的优势</h3><ol>
-<li> 可以做断言；这是单纯的坐标法解决不了的痛点</li>
-<li> 适应性强；只要你愿意基本上都可以用颜色识别来做自动化；如果不信的可以去按键精灵论坛看下有多少人按键精灵写外挂就知道了；</li>
-</ol>
-<h3 id="颜色识别法的劣势"><a href="#颜色识别法的劣势" class="headerlink" title="颜色识别法的劣势"></a>颜色识别法的劣势</h3><ol>
-<li> 代码写起来比较麻烦、每一个目标元素都是要单独取色</li>
-<li> 如果你的程序有自动换皮肤的功能就麻烦了</li>
-<li> 没有用颜色识别技术做的自动化测试框架；</li>
-</ol>
-<h3 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h3><ul>
-<li>  <a target="_blank" rel="noopener" href="http://hiadmin.org/2018/11/27/UI%E6%B5%8B%E8%AF%95%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B9%8B%E5%B1%8F%E5%B9%95%E5%9D%90%E6%A0%87/">UI测试自动化之“屏幕坐标”</a></li>
-<li>  <a target="_blank" rel="noopener" href="http://hiadmin.org/2018/08/01/Test-UI-Automation/">浅谈UI测试自动化</a></li>
-<li>  <a target="_blank" rel="noopener" href="http://hiadmin.org/2018/01/04/Python-Automation-Package/">Python下那些让人相见恨晚的自动化测试库</a></li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/01/22/FindMultiColor/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1689,7 +1087,7 @@ if login[0] &gt; 0:
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1722,7 +1120,7 @@ if login[0] &gt; 0:
   </span>
   <span class="author" itemprop="copyrightHolder">Huaisha1224</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
         
@@ -1748,7 +1146,7 @@ if login[0] &gt; 0:
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/pisces.js"></script>
+<script src="/js/schemes/muse.js"></script>
 
 
 <script src="/js/next-boot.js"></script>

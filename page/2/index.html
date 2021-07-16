@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"huaisha1224.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"huaisha1224.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta property="og:type" content="website">
@@ -133,11 +133,6 @@
     <a href="/archives/" rel="section"><i class="archive //归档 fa-fw"></i>归档</a>
 
   </li>
-        <li class="menu-item menu-item-sitemap">
-
-    <a href="/sitemap.xml" rel="section"><i class="sitemap   //站点地图 fa-fw"></i>站点地图</a>
-
-  </li>
   </ul>
 </nav>
 
@@ -196,7 +191,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-04-27 09:23:26" itemprop="dateModified" datetime="2019-04-27T09:23:26+08:00">2019-04-27</time>
+                <time title="修改时间：2021-07-15 23:05:48" itemprop="dateModified" datetime="2021-07-15T23:05:48+08:00">2021-07-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -224,60 +219,14 @@
 2、坐标的X轴向右为正，Y轴向下为正
 3、坐标原点位于窗口的左上角
 </code></pre>
-<p>我画了一张图来辅助理解一下坐标</p>
-<p><img src="/uploads/image/2018/11/XY.png" alt="1024*768的显示器"></p>
-<p>这是一个1024*768的显示器；<br>你可以把坐标理解成显示器上的经纬度；我们可以通过坐标在显示器上找到未唯一的位置；</p>
-<h3 id="坐标在测试自动化的使用场景"><a href="#坐标在测试自动化的使用场景" class="headerlink" title="坐标在测试自动化的使用场景"></a>坐标在测试自动化的使用场景</h3><pre><code>可能有人会想坐标怎么能和测试自动化扯到一起去、想象一下、如果你的项目中需要做一个“抽奖功能”、在双旦呀、双11呀、春节呀来一波抽奖、表面上给用户送一波福利；
-
-写case的时候你就在思考、怎么样测试产品提出的开奖概率；手机的开奖概率和手机壳的概率肯定是不一样的；
-
-我们在设计用例的时候就需要考虑到、一般来说、你可以用接口自动化来跑、另外一个方案就是人工在界面上点呀点。
-
-当用例执行完之后去数据库拉一把数据、计算一下每一个奖品的出现概率就可以了；
-
-在我们的项目中就算你用接口跑完了数据、还是需要在UI上验证一下功能！
-
-聪明一点的人会想到用“按键精灵”来录制、然后回放的时候死循环；
-如果你用过“按键精灵”的录制功能、大概知道按键精灵的录制就完全使用的是坐标点击来实现的；
-</code></pre>
-<p>对于程序逻辑简单、按钮位置固定的程序建议可以直接用坐标点击来协助我们重复去执行；下班的时候跑着脚本、早上过来看下数据库就能知道结果是否符合预期。    </p>
-<h3 id="如何找坐标位置"><a href="#如何找坐标位置" class="headerlink" title="如何找坐标位置"></a>如何找坐标位置</h3><pre><code>如果你要求精准可以使用Win32 api来获取当前鼠标的坐标；也就是鼠标滑动的时候打印出坐标位置；
-
-大部分情况下都不需要做到精准到1像素这样的情况、所以我们可以使用截图工具来丈量坐标位置:
-</code></pre>
-<p>一般情况下你使用QQ截图即可完成对目标坐标的获取。</p>
-<p><img src="/uploads/image/2018/11/quXY.png" alt="截图工具获取坐标值"></p>
-<p>上面的图片中我用截图工具来丈量了“用户名输入框的坐标位置(712,183)<br>我们只要使用MoveTo(712,183)这样的命令即可把鼠标移动到输入框上</p>
-<h3 id="使用坐标实现的一个自动登录用例"><a href="#使用坐标实现的一个自动登录用例" class="headerlink" title="使用坐标实现的一个自动登录用例"></a>使用坐标实现的一个自动登录用例</h3><pre><code>#! /usr/bin/env python
-import pyautogui
-import time
-#用户名输入框
-pyautogui.moveTo(712,183)
-pyautogui.click()
-pyautogui.typewrite(&quot;huang&quot;)
-time.sleep(3)
-#密码输入框
-pyautogui.moveTo(712,234)
-pyautogui.click()
-pyautogui.typewrite(&quot;11qq``1&quot;)
-#登录按钮
-pyautogui.moveTo(712,356)
-pyautogui.click()
-</code></pre>
-<p>通过上面的代码我们实现一个简单的登录功能</p>
-<p>下面是用坐标点击实现的一个自动登录用例</p>
-<p><img src="/uploads/image/2018/11/shili.gjf" alt="自动登录"></p>
-<h3 id="总结一下"><a href="#总结一下" class="headerlink" title="总结一下"></a>总结一下</h3><pre><code>1、对于按钮位置固定、并且逻辑比较简单的功能、我们是完全可以使用坐标来实现自动化的；
-2、如果想做到更好的适配、我们可以把窗口移动到屏幕的(0,0)位置
-3、最简单的使用坐标点击的工具：按键精灵
-4、如果你想用Python来实现坐标点击自动化；那么我推荐用Pyautogui
-</code></pre>
-<h3 id="相关的一些连接"><a href="#相关的一些连接" class="headerlink" title="相关的一些连接"></a>相关的一些连接</h3><ol>
-<li><a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-cn/dotnet/framework/winforms/windows-forms-coordinates" title="微软坐标介绍">微软坐标介绍</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/asweigart/pyautogui" title="PyautoGUI">Python模拟鼠标键盘</a> </li>
-<li><a target="_blank" rel="noopener" href="http://www.anjian.com/" title="按键精灵">按键精灵</a></li>
-</ol>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2018/11/27/UI%E6%B5%8B%E8%AF%95%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B9%8B%E5%B1%8F%E5%B9%95%E5%9D%90%E6%A0%87/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -319,10 +268,16 @@ pyautogui.click()
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2018-08-01 20:06:23 / 修改时间：20:23:21" itemprop="dateCreated datePublished" datetime="2018-08-01T20:06:23+08:00">2018-08-01</time>
+              <time title="创建时间：2018-08-01 20:06:23" itemprop="dateCreated datePublished" datetime="2018-08-01T20:06:23+08:00">2018-08-01</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-15 23:05:44" itemprop="dateModified" datetime="2021-07-15T23:05:44+08:00">2021-07-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -351,60 +306,14 @@ pyautogui.click()
 <li>1、版本周期不能太短、快速迭代的项目是不适合做测试自动化</li>
 <li>2、版本主要主流程要基本稳定</li>
 </ul>
-<h2 id="自动化的三大入手点："><a href="#自动化的三大入手点：" class="headerlink" title="自动化的三大入手点："></a>自动化的三大入手点：</h2><ul>
-<li>1、成本；<br>  自动化并不一定围绕测试执行，还可以包括测试的准备，log的提取，数据分析等等。<br>  将所有的与测试有关的工作逐一列出，然后找到重复的，可以被代码化的部分，评估现有工作成本和自动化成本，<br>  寻找到收益最大的工作块并顺序将之代码化。</li>
-</ul>
-<ul>
-<li><p>2、质量；<br>  和成本差不多，只是在评估的时候需要评估的是该工作块现有的质量状况和需求质量间的差异，寻找到差异最多的那个模块，<br>  并将所有质量差的模块逐一进行自动化。</p>
-</li>
-<li><p>3、 时间；<br>  需要寻找到与测试有关的所有步骤和工作块，将其中关键路径上，动作最慢，耗时最大、经常重复的部分进行自动化。</p>
-</li>
-</ul>
-<h2 id="UI测试自动化分类"><a href="#UI测试自动化分类" class="headerlink" title="UI测试自动化分类"></a>UI测试自动化分类</h2><p>测试自动化大致可以分为下面几种情形</p>
-<ul>
-<li><p>1、B/S架构的 Web UI测试自动化</p>
-</li>
-<li><p>2、APP 测试自动化</p>
-</li>
-<li><p>3、C/S架构的UI测试自动化</p>
-<p>  不管你使用什么技术来执行测试自动化至少都得包含如下几个步骤</p>
-</li>
-<li><p>1、元素位置定位</p>
-</li>
-<li><p>2、操作、输入</p>
-</li>
-<li><p>3、判断预期输出</p>
-</li>
-</ul>
-<h3 id="Web测试自动化的元素定位"><a href="#Web测试自动化的元素定位" class="headerlink" title="Web测试自动化的元素定位"></a>Web测试自动化的元素定位</h3><blockquote>
-<p>Web UI测试自动化中比较常用的定位方法；</p>
-<p>比如查找id、name、class、甚至可以使用xpath和css这类通用性的定位方法；</p>
-<p>常用的测试自动化工具有selenium、robotframework等等等</p>
-</blockquote>
-<p><code>br.find_element_by_id(&quot;loginButton&quot;).chick()</code></p>
-<pre><code>上面这行代码中、我们在页面中查id=loginButton的元素、并点击
-</code></pre>
-<h3 id="APP-UI测试自动化的元素定位"><a href="#APP-UI测试自动化的元素定位" class="headerlink" title="APP UI测试自动化的元素定位"></a>APP UI测试自动化的元素定位</h3><blockquote>
-<p>APP由于存在Native App、Web App、Hybrid app几种模式；</p>
-<p>但是APP的UI元素识别基本上也可以用id、name、class以及xpath来定位的    </p>
-<p>而目前常用的APP UI测试自动化工具有appium、UIAutomator、Monkeyrunner等等</p>
-</blockquote>
-<h3 id="C-S架构UI测试自动化的元素定位"><a href="#C-S架构UI测试自动化的元素定位" class="headerlink" title="C/S架构UI测试自动化的元素定位"></a>C/S架构UI测试自动化的元素定位</h3><blockquote>
-<p>C/S架构的UI 也就是我们常用的PC电脑程序；</p>
-</blockquote>
-<blockquote>
-<p>1、微软标准控件的应用程序；可用Win32 api以及MSAA/UIA来操作控件、而不是定位控件。</p>
-</blockquote>
-<blockquote>
-<p>2、如果非标准控件开发的应用程序；可用基于坐标的方式来确定按钮位置    </p>
-</blockquote>
-<blockquote>
-<p>常用的工具：Win32 Api、UIA、按键精灵、AutoIt等等</p>
-</blockquote>
-<h3 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h3><pre><code>不管使用了什么技术；自动化、性能、接口、手工、单元......最终都要回到业务上。
-</code></pre>
-<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a target="_blank" rel="noopener" href="http://www.51testing.com/html/05/15030005-860250.html">自动化测试和测试自动化的区别</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2018/08/01/Test-UI-Automation/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -446,10 +355,16 @@ pyautogui.click()
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2018-06-14 19:26:23 / 修改时间：20:12:28" itemprop="dateCreated datePublished" datetime="2018-06-14T19:26:23+08:00">2018-06-14</time>
+              <time title="创建时间：2018-06-14 19:26:23" itemprop="dateCreated datePublished" datetime="2018-06-14T19:26:23+08:00">2018-06-14</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-15 23:05:40" itemprop="dateModified" datetime="2021-07-15T23:05:40+08:00">2021-07-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -481,61 +396,14 @@ pyautogui.click()
 <li>验证被测程序是正确的（即程序按照预期运行做了正确的事情）</li>
 <li>寻找错误（即程序没有做错误的事情）</li>
 </ol>
-<blockquote>
-<p>我们所设计的测试用例大部分都是按照情况1在编写，执行的，<br>但是同时做着情况2的事情，其中验证正确比较简单，只需要将实际结果和预期结果做比较；<br>而寻找错误就比较困难，因为太多不可预知或者偶然性的错误会发生。</p>
-</blockquote>
-<h2 id="测试执行过程"><a href="#测试执行过程" class="headerlink" title="测试执行过程"></a>测试执行过程</h2><p>我们用一个登录窗口来说明测试过程、大概可以分为三个部分：</p>
-<ol>
-<li>确认登录窗口位置</li>
-<li>输入帐号密码并点击登录</li>
-<li>验证登录结果</li>
-</ol>
-<p>在手工测试过程中我们通过人眼来确认登录窗口位置、并在键盘上输入帐号密码并点击登录按钮；<br>最后通过人眼来观察是否登录成功、以此来判断这条用例是否成功。</p>
-<p>要实现测试自动化，就要将这三个步骤通过程序来实现，并且高效地结合起来。</p>
-<h2 id="测试自动化"><a href="#测试自动化" class="headerlink" title="测试自动化"></a>测试自动化</h2><p>要实现测试自动化，就要将前面说的三个步骤通过程序来实现，并且高效地结合起来。</p>
-<p>我们要理解测试自动化，就必须理解“自动化”和“测试”，<br>其中“自动化”可以想象成通过各种编程技术和工具实现程序对被测系统可操控的行为；<br>重点在于对“测试”的理解。</p>
-<h2 id="自动化测试大致可以分为如下集中类型"><a href="#自动化测试大致可以分为如下集中类型" class="headerlink" title="自动化测试大致可以分为如下集中类型"></a>自动化测试大致可以分为如下集中类型</h2><ol>
-<li>单元测试自动化</li>
-<li>接口测试自动化</li>
-<li>UI测试自动化</li>
-</ol>
-<blockquote>
-<p>在测试的日常工作中接口测试自动化和UI测试自动化做得更多一些。</p>
-</blockquote>
-<h2 id="以接口测试为例："><a href="#以接口测试为例：" class="headerlink" title="以接口测试为例："></a>以接口测试为例：</h2><ol>
-<li>批量的发送请求并获取返回值</li>
-<li>批量得到预期结果并转为机器可识别的数据</li>
-<li>批量比较返回值和预期结果数据</li>
-<li>将比较结果生成测试报告</li>
-</ol>
-<h2 id="UI测试自动化，以WebUI为例："><a href="#UI测试自动化，以WebUI为例：" class="headerlink" title="UI测试自动化，以WebUI为例："></a>UI测试自动化，以WebUI为例：</h2><p>需要实现web操作，无论你是自己写程序实现，还是用现有的工具，<br>都是将动作、对象、数值组织起来完成一个web操作。</p>
-<p>如登入网站，分3个步骤，</p>
-<ol>
-<li>定位输入框位置</li>
-<li>输入帐号密码并点击登录按钮</li>
-<li>判断结果</li>
-</ol>
-<h2 id="测试自动化常见应用场景"><a href="#测试自动化常见应用场景" class="headerlink" title="测试自动化常见应用场景"></a>测试自动化常见应用场景</h2><ol>
-<li>服务器端要求稳定性高</li>
-<li>软件生命周期长</li>
-<li>软件需求变化不大</li>
-<li>测试用例巨大</li>
-<li>操作繁琐易错</li>
-<li>大量重复性用例执行</li>
-<li>大量回归测试工作</li>
-</ol>
-<blockquote>
-<p>对于这些情况引入测试自动化绝对是明智之举。</p>
-</blockquote>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote>
-<p>如果想用自动化测试去发现错误，首先就必须由人来想到可能出现错误的各种情况，然后用自动化去检查。这样其实就不是用自动化去发现错误了，而是由人去寻找错误（或者错误的可能性），然后用自动化去验证。</p>
-</blockquote>
-<blockquote>
-<p>但自动化的成果只能局限在人工能够预测到的范围之内。所以，能否发现bug，最核心的东西是用例，而不是工具或方法，只有用例能够发现bug，工具只是实现的手段而已。</p>
-</blockquote>
-<h2 id="因此，我们首先要提升设计测试用例的能力！"><a href="#因此，我们首先要提升设计测试用例的能力！" class="headerlink" title="因此，我们首先要提升设计测试用例的能力！"></a>因此，我们首先要提升设计测试用例的能力！</h2><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/thomashtq/article/details/44852077">测试自动化</a></p>
-<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95">维基百科(软件测试)</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2018/06/14/Test-Automation/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -585,7 +453,7 @@ pyautogui.click()
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-04-27 09:27:25" itemprop="dateModified" datetime="2019-04-27T09:27:25+08:00">2019-04-27</time>
+                <time title="修改时间：2021-07-15 23:06:10" itemprop="dateModified" datetime="2021-07-15T23:06:10+08:00">2021-07-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -610,48 +478,14 @@ pyautogui.click()
       
           <h2 id="用ProcessMonitor找出偷占网速元凶"><a href="#用ProcessMonitor找出偷占网速元凶" class="headerlink" title="用ProcessMonitor找出偷占网速元凶"></a>用ProcessMonitor找出偷占网速元凶</h2><p>我们在使用电脑的过程中、经常会出现网速变慢的情况；这个时候我们就需要排查出到底是那一个程序在下载、并且我们需要知道它在下载什么内容；</p>
 <p>这次我们需要用到’TCPView’和’ProcessMonitor’这2款微软出品的软件；所用到的中文版程序在文章末尾可以下载到。</p>
-<h3 id="网速变慢、电脑太卡"><a href="#网速变慢、电脑太卡" class="headerlink" title="网速变慢、电脑太卡"></a>网速变慢、电脑太卡</h3><p>当我们发现网速变慢之后、可以通过一些软件来确认是否有下载的情况；我这里是用的NetMeter在监控网络流量；如果你安装了360或者是腾讯电脑管家的他们都是有系统挂件可以看到当前流量情况。</p>
-<p><img src="/uploads/image/2018/05/Pjl8m7t.png" alt="查看网速情况"></p>
-<p>通过上面可以看到我的电脑上下载速度在1.3M左右；由于我们公司对每一台电脑限速了；所以基本上1.3M就是我们能下载的全部速度了；这个时候如果想开个网页、看个视频、都变得很艰难！</p>
-<h3 id="用TCPView找出偷占流量的进程名"><a href="#用TCPView找出偷占流量的进程名" class="headerlink" title="用TCPView找出偷占流量的进程名"></a>用TCPView找出偷占流量的进程名</h3><p>我们先用TCPView来查找到底是谁在偷偷的大量下载；<br>打开TCPView之后通过’接收字节’排序；接收字节越大说明下载量越大</p>
-<p><img src="/uploads/image/2018/05/OiaVUQ7.png" alt="把TCPView用起来"></p>
-<p>然后通过下载量最大的这条记录找到进程名和进程ID(进程名Svchost.exe/进程ID 4188)</p>
-<p><img src="/uploads/image/2018/05/3l4RFWa.png" alt="用TCPView找出进程名称以及进程ID"></p>
-<h3 id="祭出杀器-ProcessMonitor"><a href="#祭出杀器-ProcessMonitor" class="headerlink" title="祭出杀器 ProcessMonitor"></a>祭出杀器 ProcessMonitor</h3><blockquote>
-<p>Process Monitor是一款系统进程监视软件、使用者可以对系统中的任何文件和注册表操作同时</p>
-</blockquote>
-<blockquote>
-<p>进行监视和记录；</p>
-</blockquote>
-<p>前面我们同TCPView找到了进程名称和进程ID；但是我们还是不知道在下载什么内容<br>所以我们要用ProcessMonitor来做接下来的操作</p>
-<p><img src="/uploads/image/2018/05/Epj3DYs.png" alt="ProcessMoniter过滤器"></p>
-<p>在ProcessMonitor的过滤器中来过滤我们前面用TCPView找出来的进程ID 4188、当然也可以用进程名称</p>
-<h3 id="清理ProcessMonitor的过滤结果"><a href="#清理ProcessMonitor的过滤结果" class="headerlink" title="清理ProcessMonitor的过滤结果"></a>清理ProcessMonitor的过滤结果</h3><p>用进程ID或者进程名称过滤出来的结果会很多；<br>通过ProcessMonitor我们可以看到这个进程所有的操作；包括注册表、网络连接、读写文件等操作</p>
-<p><img src="/uploads/image/2018/05/7suBo9n.png" alt="ProcessMoniter过滤结果"></p>
-<p>偷跑网速一般情况下都会是在下载文件；所以我们可以只查看读写文件操作</p>
-<h3 id="仅查看读写文件数据"><a href="#仅查看读写文件数据" class="headerlink" title="仅查看读写文件数据"></a>仅查看读写文件数据</h3><p><img src="/uploads/image/2018/05/to8HAyK.png" alt="只看读写文件操作"></p>
-<h3 id="找到下载路径"><a href="#找到下载路径" class="headerlink" title="找到下载路径"></a>找到下载路径</h3><p>通过上面过滤之后我们可以看到Svchost把文件写入到那一个目录</p>
-<p><img src="/uploads/image/2018/05/tuYUrfb.png" alt="找出下载路径"></p>
-<p>通过上面一阵操作之后我们可以看到’Svchost.exe’这个程序把文件下载回来写入到了’C:\Windows\SoftwareDistribution\Download’；所以我们打开目录看一下到底下载了什么内容</p>
-<h3 id="确认下载回来的文件内容"><a href="#确认下载回来的文件内容" class="headerlink" title="确认下载回来的文件内容"></a>确认下载回来的文件内容</h3><p>打开目录之后看文件名有点像是微软自家的东西</p>
-<p><img src="/uploads/image/2018/05/D5zeeMx.png"></p>
-<p>为了确认下我们看下文件的数字签名</p>
-<p><img src="/uploads/image/2018/05/GzezAvd.png"></p>
-<p>通过’WindowsUpdateBox’和微软的签名来判断应该是操作系统的自动更新；<br>那我们去看下是否是系统自动更新</p>
-<p><img src="/uploads/image/2018/05/5eXh0pU.png" alt="系统自动更新"></p>
-<p>在系统自动更新界面我们看到的确是正在下载更新补丁</p>
-<h3 id="总结一下"><a href="#总结一下" class="headerlink" title="总结一下"></a>总结一下</h3><p>到这里问题解决了我们来回顾一下</p>
-<ol>
-<li>当我发现电脑网速异常变慢之后、用NetMeter来确认的确是我的电脑在下载文件</li>
-<li>然后我用TCPView来找出是那一个进程名称和进程ID在下载文件(Svchost.exe)</li>
-<li>接着我用ProcessMonitor来确认是Svchost.exe把文件下载到了C盘的一个目录</li>
-<li>在下载目录中发现下载回来的文件是微软的签名</li>
-<li>通过文件名称怀疑是微软的自动更新</li>
-<li>最终在控制面板中确认是操作系统的在自动更新补丁</li>
-</ol>
-<h3 id="文中用到的工具下载"><a href="#文中用到的工具下载" class="headerlink" title="文中用到的工具下载"></a>文中用到的工具下载</h3><p><a target="_blank" rel="noopener" href="https://github.com/huaisha1224/Sysinternals-CN" title="ProcessMonitor中文版">ProcessMonitor中文版</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/huaisha1224/Sysinternals-CN" title="TCPView中文版">TCPView中文版</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2018/05/23/%E7%94%A8ProcessMonitor%E6%89%BE%E5%87%BA%E5%81%B7%E5%8D%A0%E7%BD%91%E9%80%9F%E5%85%83%E5%87%B6/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -701,7 +535,7 @@ pyautogui.click()
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-04-27 09:29:43" itemprop="dateModified" datetime="2019-04-27T09:29:43+08:00">2019-04-27</time>
+                <time title="修改时间：2021-07-15 23:06:05" itemprop="dateModified" datetime="2021-07-15T23:06:05+08:00">2021-07-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -727,21 +561,14 @@ pyautogui.click()
           <h2 id="用ProcessExplorer解决文件被占用的问题"><a href="#用ProcessExplorer解决文件被占用的问题" class="headerlink" title="用ProcessExplorer解决文件被占用的问题"></a>用ProcessExplorer解决文件被占用的问题</h2><p>前段时间写了ProcessExplorer的各种好、结果有朋友说没有实际示例、还是看不出来ProcessExplorer到底能做什么？</p>
 <p>所以这次我们用一个例子来说明下ProcessExplorer的功能</p>
 <p>我们经常在删除/改名文件或者是文件夹的时候提示文件被占用的情况</p>
-<h3 id="文件夹正在使用"><a href="#文件夹正在使用" class="headerlink" title="文件夹正在使用"></a>文件夹正在使用</h3><p><img src="/uploads/image/2018/05/8vP6ZiD.png" alt="文件被占用"></p>
-<p>上面这样的情况应该是所有Windows用户都遇到过的问题</p>
-<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>我们要祭出ProcessExplorer了</p>
-<p><img src="/uploads/image/2018/05/wD6Ahls.png" alt="启动ProcessExplorer"></p>
-<p>启动ProcessExplorer之后我们点击查找按钮、或者按Ctrl+F</p>
-<p><img src="/uploads/image/2018/05/niPpy19.png" alt="点击find按钮"></p>
-<p>调起ProcessExplorer搜索界面</p>
-<p><img src="/uploads/image/2018/05/Dz5ycm0.png" alt="句柄查找"></p>
-<p>输入我们被占用的文件/文件夹名称、点击搜索</p>
-<p><img src="/uploads/image/2018/05/c4ZnXdQ.png" alt="搜索被占用的名称"></p>
-<p>搜索结果完成之后我们就能看到文件/文件夹被那一个进程占用了</p>
-<p><img src="/uploads/image/2018/05/rVm6sBQ.png" alt="静静的等待搜索结果"></p>
-<p>剩下的你就可以去结束这个进程啦</p>
-<h3 id="中文版ProcessExplorer-下载"><a href="#中文版ProcessExplorer-下载" class="headerlink" title="中文版ProcessExplorer 下载"></a>中文版ProcessExplorer 下载</h3><p><a target="_blank" rel="noopener" href="https://github.com/huaisha1224/Sysinternals-CN" title="ProcessExplorer中文版">ProcessExplorer中文版</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2018/05/16/%E7%94%A8ProcessExplorer%E8%A7%A3%E5%86%B3%E6%96%87%E4%BB%B6%E8%A2%AB%E5%8D%A0%E7%94%A8/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -791,7 +618,7 @@ pyautogui.click()
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-04-27 09:32:40" itemprop="dateModified" datetime="2019-04-27T09:32:40+08:00">2019-04-27</time>
+                <time title="修改时间：2021-07-15 23:04:44" itemprop="dateModified" datetime="2021-07-15T23:04:44+08:00">2021-07-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -820,45 +647,14 @@ pyautogui.click()
 <blockquote>
 <p>Process Explorer让使用者能了解看不到的在后台执行的处理程序，能显示目前已经载入哪些模块，分别是正在被哪些程序使用着，还可显示这些程序所调用的 DLL进程，以及他们所打开的句柄。Process Explorer最大的特色就是可以中终任何进程，甚至就算是系统级别的你要关闭也同样能够关闭，同时还带有超酷的曲线图来展示CPU、内存等使用情况</p>
 </blockquote>
-<h3 id="Process-Explorer功能介绍"><a href="#Process-Explorer功能介绍" class="headerlink" title="Process Explorer功能介绍"></a>Process Explorer功能介绍</h3><ul>
-<li>默认以进程树的方式显示进程及子进程之间的关系(可开关)且以颜色进行区分让人一目了然</li>
-<li>非常精确的 CPU/GPU/IO以及内存的占用显示</li>
-<li>有替代任务管理器的选项，在 Windows XP/7/Vista/8/10 中都非常有用</li>
-<li>可以任务栏托盘图标的方式监视 CPU、磁盘、GPU 和 网络等的使用情况</li>
-<li>查看进程加载了哪些 DLL</li>
-<li>查看进程打开或锁定了哪些文件或文件夹</li>
-<li>查看任何进程的完整信息，包括：线程、内存占用、句柄、对象、进程/线程的启动时间</li>
-<li>可以直接 Kill 掉整个进程树</li>
-<li>可以将进程挂起（暂停），冻结其所有线程</li>
-<li>可以查看线程的CPU使用率</li>
-<li>从 v16 版本开始集成了VirusTotal，可以快速验证是否是病毒</li>
-</ul>
-<h3 id="加强版的任务管理器"><a href="#加强版的任务管理器" class="headerlink" title="加强版的任务管理器"></a>加强版的任务管理器</h3><p><img src="/uploads/image/2018/05/XxEJ8bz.png"></p>
-<h3 id="时时的操作系统性能监视器"><a href="#时时的操作系统性能监视器" class="headerlink" title="时时的操作系统性能监视器"></a>时时的操作系统性能监视器</h3><p><img src="/uploads/image/2018/05/Y9LJSA1.png"></p>
-<h3 id="提供常用的进程操作"><a href="#提供常用的进程操作" class="headerlink" title="提供常用的进程操作"></a>提供常用的进程操作</h3><p><img src="/uploads/image/2018/05/WSRu7NW.png"></p>
-<h3 id="进程详细信息"><a href="#进程详细信息" class="headerlink" title="进程详细信息"></a>进程详细信息</h3><ul>
-<li>数字签名</li>
-<li>程序路径</li>
-<li>启动方式</li>
-<li>工作目录</li>
-<li>启动位置 </li>
-<li>进程启动时间</li>
-</ul>
-<p><img src="/uploads/image/2018/05/FRDno5Z.png"></p>
-<ul>
-<li>甚至可以看到线程数据</li>
-</ul>
-<p><img src="/uploads/image/2018/05/TcKzY09.png"></p>
-<h3 id="善用查找功能"><a href="#善用查找功能" class="headerlink" title="善用查找功能"></a>善用查找功能</h3><pre><code>可以用查找功能来找出文件、dll被谁占用了
-</code></pre>
-<p><img src="/uploads/image/2018/05/CY2xWk4.png"></p>
-<h3 id="超级好用的窗口查找功能"><a href="#超级好用的窗口查找功能" class="headerlink" title="超级好用的窗口查找功能"></a>超级好用的窗口查找功能</h3><pre><code>1、如果你发现一个弹窗、广告又不知道是那一个进程的功能；那么可以用窗口查找功能
-2、点击‘十字准心’拖动到你要看的窗口上面；
-3、ProcessExplorer就会自动定位并高亮这个进程
-</code></pre>
-<p><img src="/uploads/image/2018/05/eihdxUc.png"></p>
-<h3 id="中文版ProcessExplorer-下载"><a href="#中文版ProcessExplorer-下载" class="headerlink" title="中文版ProcessExplorer 下载"></a>中文版ProcessExplorer 下载</h3><p><a target="_blank" rel="noopener" href="https://github.com/huaisha1224/Sysinternals-CN" title="ProcessExplorer中文版">ProcessExplorer中文版</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2018/05/04/ProcessExplorer/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -908,7 +704,7 @@ pyautogui.click()
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-04-27 09:39:48" itemprop="dateModified" datetime="2019-04-27T09:39:48+08:00">2019-04-27</time>
+                <time title="修改时间：2021-07-15 23:05:32" itemprop="dateModified" datetime="2021-07-15T23:05:32+08:00">2021-07-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -936,45 +732,14 @@ pyautogui.click()
 2.    安装好Chrome浏览器
 3.    下载离线Proxy_SwitchySharp插件文件
 </code></pre>
-<h3 id="配置Shadowsocks-Gui"><a href="#配置Shadowsocks-Gui" class="headerlink" title="配置Shadowsocks-Gui"></a>配置Shadowsocks-Gui</h3><pre><code>1.运行Shadowsocks-Gui工具
-2.在Shadowsocks-Gui界面中输入如下信息
-服务器IP：
-服务器端口：
-服务器密码：
-加密方式：
-本地端口：
-</code></pre>
-<p><img src="/uploads/image/2018/04/7QjEDaY.png"></p>
-<h3 id="设置Shadowsocks-Gui开机启动"><a href="#设置Shadowsocks-Gui开机启动" class="headerlink" title="设置Shadowsocks-Gui开机启动"></a>设置Shadowsocks-Gui开机启动</h3><pre><code>1.    设置好Shadowsocks-Gui开机启动
-2.    并勾选启用代理
-</code></pre>
-<p><img src="/uploads/image/2018/04/UV0IrYG.png"></p>
-<h3 id="安装Proxy-SwitchySharp插件"><a href="#安装Proxy-SwitchySharp插件" class="headerlink" title="安装Proxy_SwitchySharp插件"></a>安装Proxy_SwitchySharp插件</h3><pre><code>1.    运行Chrome浏览器
-2.    点击设置按钮
-3.    选择更多工具
-4.    选中扩展程序
-</code></pre>
-<p><img src="/uploads/image/2018/04/npFaE1O.png"></p>
-<p>拖动Proxy_SwitchySharp插件到Chrome浏览器上<br><img src="/uploads/image/2018/04/dED9MQt.png"><br>    弹出提示框的时候点击添加<br><img src="/uploads/image/2018/04/QK03e2H.png"></p>
-<h3 id="配置Proxy-SwitchySharp插件"><a href="#配置Proxy-SwitchySharp插件" class="headerlink" title="配置Proxy_SwitchySharp插件"></a>配置Proxy_SwitchySharp插件</h3><pre><code>1.    顺便输入一个名称
-2.    在手动配置这里选择SOCKS代理；
-    1.    输入本地的IP地址；和端口号(这里的端口号就是在Shadowsocks-Gui设置的本地端口)
-    2.    并一定要选择socks V5
-3.    点击保存即可
-</code></pre>
-<p><img src="/uploads/image/2018/04/bZAZIxO.png"></p>
-<p>访问非死不可看看；肯定是不能访问的<br><img src="/uploads/image/2018/04/DJvCn36.png"></p>
-<h3 id="添加代理规则"><a href="#添加代理规则" class="headerlink" title="添加代理规则"></a>添加代理规则</h3><pre><code>1.    访问不能访问的网站
-2.    点击SwitchySharp的图标
-3.    新建规则
-4.    在情景模式里面选择你创建的shadowsocks名称
-5.    并点击添加
-</code></pre>
-<p><img src="/uploads/image/2018/04/rcHHLET.png"><br><img src="/uploads/image/2018/04/Cctuaxo.png"></p>
-<p>添加完成规则之后我再次刷新页面</p>
-<p><img src="/uploads/image/2018/04/J2lPlU5.png"></p>
-<p>当再次遇到不能访问的网站的时候记得添加规则就可以了。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2018/04/25/ShadowSocks-Client%E5%85%A5%E9%97%A8/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1016,10 +781,16 @@ pyautogui.click()
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2018-04-25 00:00:00 / 修改时间：17:03:49" itemprop="dateCreated datePublished" datetime="2018-04-25T00:00:00+08:00">2018-04-25</time>
+              <time title="创建时间：2018-04-25 00:00:00" itemprop="dateCreated datePublished" datetime="2018-04-25T00:00:00+08:00">2018-04-25</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-15 23:05:19" itemprop="dateModified" datetime="2021-07-15T23:05:19+08:00">2021-07-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -1046,89 +817,14 @@ pyautogui.click()
 所有人在浏览器上的行为都可以用Selenium来驱动浏览器操作完成
 所以我们也是可以用Selenium来爬取动态网站上的数据。
 </code></pre>
-<h3 id="用Selenium抓取网页内容步骤如下"><a href="#用Selenium抓取网页内容步骤如下" class="headerlink" title="用Selenium抓取网页内容步骤如下"></a>用Selenium抓取网页内容步骤如下</h3><pre><code>1、打开浏览器
-2、访问Url地址
-3、获取所需要的内容
-4、关闭浏览器
-</code></pre>
-<h3 id="最简单的实现代码"><a href="#最简单的实现代码" class="headerlink" title="最简单的实现代码"></a>最简单的实现代码</h3><pre><code>from selenium import webdriver
-import time
-
-#Buff上Pubg饰品价格
-for x in range(1,13):
-       url = (&#39;https://buff.163.com/market/?game=pubg#tab=selling&amp;page_num=%s&amp;sort_by=price.desc&#39; % x)
-    print(url)
-    driver = webdriver.Firefox()
-    driver.get(url)
-    try:
-        for i in range(1,21):
-            name = driver.find_element_by_xpath(
-                (&#39;//html/body/div[6]/div/div[4]/div[1]/ul/li[%s]/h3/a&#39;) % i)
-            money = driver.find_element_by_xpath(
-                (&#39;//html/body/div[6]/div/div[4]/div[1]/ul/li[%s]/p/strong&#39;) % i)
-            print(name.text,money.text)
-    except:
-        pass
-
-    driver.close()
-</code></pre>
-<p>上面这段代码我用<code>xpath</code>来定位并获取到Buff上的Pubg饰品名称和对应的价格；</p>
-<p>如果你仔细看这段代码的话、会发现、一共需要访问12个页面获取数据；也就是说需要打开12次浏览器并关闭！<br>这段代码运行完之后耗时120s左右；</p>
-<p>接下来我们想优化一下爬虫性能；能不能只打开一次浏览器；然后抓取完一个url之后不关闭浏览器的情况下访问下一个url地址；</p>
-<h3 id="修改之后的代码"><a href="#修改之后的代码" class="headerlink" title="修改之后的代码"></a>修改之后的代码</h3><pre><code>from selenium import webdriver
-import time
-
-#Buff上Pubg饰品价格
-driver = webdriver.Firefox()
-for x in range(1,13):
-    url = (&#39;https://buff.163.com/market/?game=pubg#tab=selling&amp;page_num=%s&amp;sort_by=price.desc&#39; % x)
-    print(url)
-    #driver = webdriver.Firefox()
-    driver.get(url)
-    try:
-        for i in range(1,21):
-            name = driver.find_element_by_xpath(
-                (&#39;//html/body/div[6]/div/div[4]/div[1]/ul/li[%s]/h3/a&#39;) % i)
-            money = driver.find_element_by_xpath(
-                (&#39;//html/body/div[6]/div/div[4]/div[1]/ul/li[%s]/p/strong&#39;) % i)
-            print(name.text,money.text)
-    except:
-        pass
-
-driver.close()
-</code></pre>
-<p>上面的代码只是简单的把打开浏览器的操作<code>driver = webdriver.Firefox()</code>提前到for循环之前;<br>这样的结果就是只打开一次浏览器、并且会逐一的访问url地址；<br>但是运行代码之后却发现、只获取到了第一页里面的数据；并且重复获取了12次第一页的数据。</p>
-<p>也就是说虽然在同一个浏览器窗口里面打开了不同的url地址、但是获取到的内容却一直是第一个url里面的数据。</p>
-<p>从现象分析之后可以确定、虽然我们在同一个浏览器窗口里面打开了url地址、但是却没有刷新页面内容、导致页面上一直显示的数据就是第一个url里面的数据。<br>知道了问题所在之后就好解决了。</p>
-<h3 id="最终的代码"><a href="#最终的代码" class="headerlink" title="最终的代码"></a>最终的代码</h3><pre><code>#!/usr/bin/env python
-#encoding = utf-8
-from selenium import webdriver
-import time
-
-#Buff上Pubg饰品价格
-driver = webdriver.Firefox()
-for x in range(1,13):
-    url = (&#39;https://buff.163.com/market/?game=pubg#tab=selling&amp;page_num=%s&amp;sort_by=price.desc&#39; % x)
-    print(url)
-    #driver = webdriver.Firefox()
-    driver.get(url)
-    driver.refresh()
-    try:
-        for i in range(1,21):
-            name = driver.find_element_by_xpath(
-            (&#39;//html/body/div[6]/div/div[4]/div[1]/ul/li[%s]/h3/a&#39;) % i)
-            money = driver.find_element_by_xpath(
-            (&#39;//html/body/div[6]/div/div[4]/div[1]/ul/li[%s]/p/strong&#39;) % i)
-            print(name.text,money.text)
-    except:
-        pass
-
-driver.close()
-</code></pre>
-<p>有没有发现我们只需要在<code>selenium</code>的<code>get(url)</code>方法后面调用一下<code>refresh()</code>来强制刷新下网页就可以完美的解决了我们上面遇到的问题。</p>
-<p>运行第一份代码；耗时120s、运行第三份代码耗时35s；我们只是稍微的修改了一下代码、性能提升超过3倍！</p>
-<p>抓取Steam的饰品价格Github地址:<a target="_blank" rel="noopener" href="https://github.com/huaisha1224/Steam-Market-SellingPrice">获取Steam饰品价格</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2018/04/25/Selenium-Steam-SellingPrice/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1178,7 +874,7 @@ driver.close()
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-04-19 16:49:37" itemprop="dateModified" datetime="2019-04-19T16:49:37+08:00">2019-04-19</time>
+                <time title="修改时间：2021-07-15 23:04:51" itemprop="dateModified" datetime="2021-07-15T23:04:51+08:00">2021-07-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1212,63 +908,14 @@ test fixtures ： setup + test case + teardown结构
 
 test runner
 </code></pre>
-<p><a target="_blank" rel="noopener" href="https://docs.python.org/2/library/unittest.html" title="Unittest官网">Unittest官网</a></p>
-<h3 id="Pytest-一个成熟的全功能-Python-测试工具："><a href="#Pytest-一个成熟的全功能-Python-测试工具：" class="headerlink" title="Pytest- 一个成熟的全功能 Python 测试工具："></a>Pytest- 一个成熟的全功能 Python 测试工具：</h3><p>与Python自带的unittest测试框架类似，但是比unittest框架使用起来更简洁，效率更高。根据Pytest的官方网站介绍，它具有如下特点：</p>
-<pre><code>非常容易上手，入门简单，文档丰富，文档中有很多实例可以参考
-
-能够支持简单的单元测试和复杂的功能测试
-
-支持参数化
-
-执行测试过程中可以将某些测试跳过，或者对某些预期失败的case标记成失败
-
-支持重复执行失败的case
-
-支持运行由nose, unittest编写的测试case
-
-具有很多第三方插件，并且可以自定义扩展
-
-方便的和持续集成工具集成
-</code></pre>
-<p><a target="_blank" rel="noopener" href="https://docs.pytest.org/en/latest/" title="Pytest官网">Pytest官网</a></p>
-<h3 id="Robot-Framework-–-一个通用的自动化测试框架。"><a href="#Robot-Framework-–-一个通用的自动化测试框架。" class="headerlink" title="Robot Framework – 一个通用的自动化测试框架。"></a>Robot Framework – 一个通用的自动化测试框架。</h3><p>Robot Framework是一款python编写的功能自动化测试框架。具备良好的可扩展性，支持关键字驱动，可以同时测试多种类型的客户端或者接口，可以进行分布式测试执行。主要用于轮次很多的验收测试和验收测试驱动开发</p>
-<pre><code>测试用例使用文本文件（TXT或者TSV文件）保存，使用制表符分隔数据。
-
-可以方便的使用任何文本编辑器，或者EXCEL编辑测试用例。
-
-可以使用HTML格式创建用例。
-
-测试用例中支持变量使用，可以使用IF语句和FOR循环语句。
-
-可以利用“标签”功能对测试用例进行分类和有选择执行。
-
-支持关键字驱动、数据驱动和行为驱动。
-
-利用已有的关键字，测试人员可以创建自己需要的关键字，形成更高级别的行为。
-
-测试执行报告和日志是HTML格式，容易阅读。
-</code></pre>
-<p><a target="_blank" rel="noopener" href="http://robotframework.org/" title="Robot Framework官网">Robot Framework官网</a></p>
-<h3 id="PyAutoGUI-–-PyAutoGUI-是一个人性化的跨平台-GUI-自动测试模块；"><a href="#PyAutoGUI-–-PyAutoGUI-是一个人性化的跨平台-GUI-自动测试模块；" class="headerlink" title="PyAutoGUI – PyAutoGUI 是一个人性化的跨平台 GUI 自动测试模块；"></a>PyAutoGUI – PyAutoGUI 是一个人性化的跨平台 GUI 自动测试模块；</h3><p>PyAutoGUI是用Python写的一个模块，使用它可以控制鼠标和键盘。利用它可以实现自动化任务，只要你人工能操作的都可以用PyAutoGui来完成自动化。</p>
-<p>PyAutoGUI</p>
-<pre><code>可以模拟鼠标的移动、点击、拖拽
-
-可以键盘按键输入、按住操作，以及鼠标+键盘的热键同时按住
-
-可以识别图片、通过图片来识别GUI上的按钮位置并做出相应的操作
-</code></pre>
-<p><a target="_blank" rel="noopener" href="https://github.com/asweigart/pyautogui" title="PyAutoGUI官网">PyAutoGUI官网</a></p>
-<h3 id="Selenium-–-Selenium-WebDriver-的-Python-绑定；"><a href="#Selenium-–-Selenium-WebDriver-的-Python-绑定；" class="headerlink" title="Selenium – Selenium WebDriver 的 Python 绑定；"></a>Selenium – Selenium WebDriver 的 Python 绑定；</h3><p>Selenium是一个用于Web应用程序测试的工具。Selenium测试直接运行在浏览器中，就像真正的用户在操作一样。支持的浏览器包括IE，Mozilla Firefox，Safari，Google Chrome，Opera等。这个工具的主要功能包括：测试与浏览器的兼容性——测试你的应用程序看是否能够很好得工作在不同浏览器和操作系统之上。测试系统功能——创建回归测试检验软件功能和用户需求。支持自动录制动作和自动生成 .Net、Java、Perl等不同语言的测试脚本。</p>
-<pre><code>框架底层使用JavaScript模拟真实用户对浏览器进行操作。
-
-测试脚本执行时，浏览器自动按照脚本代码做出点击，输入，打开，验证等操作、就像真实用户所做的一样。
-
-使浏览器兼容性测试自动化成为可能，尽管在不同的浏览器上依然有细微的差别。
-
-使用简单，可使用Java，Python等多种语言编写用例脚本。
-</code></pre>
-<p><a target="_blank" rel="noopener" href="http://www.seleniumhq.org/" title="Selenium官网">Selenium官网</a> </p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2018/01/04/Python-Automation-Package/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1318,7 +965,7 @@ test runner
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-04-27 16:02:14" itemprop="dateModified" datetime="2019-04-27T16:02:14+08:00">2019-04-27</time>
+                <time title="修改时间：2021-07-15 23:05:15" itemprop="dateModified" datetime="2021-07-15T23:05:15+08:00">2021-07-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1352,24 +999,16 @@ test runner
 <li>Selenium Server分为3部分。</li>
 <li>Launcher：启动浏览器</li>
 <li>Http Proxy：selenium Server的Http代理</li>
-<li>Core：嵌入到浏览器的js代码。<br>有Launcher启动浏览器，将core嵌入到浏览器，并把浏览器代理设置为selenium Server的Http Proxy。</li>
+<li>Core：嵌入到浏览器的js代码。</li>
 </ul>
-<p>使用的是JavaScript注入技术与浏览器打交道，需要Selenium RC启动一个Server，将操作Web元素的API调用转化为一段段Javascript，在Selenium内核启动浏览器之后注入这段Javascript。<br>正如Seleniumhq官网所说、selenium不能解决如文件上传或下载，弹出框和对话框这样的操作。</p>
-<h3 id="webdriver的诞生"><a href="#webdriver的诞生" class="headerlink" title="webdriver的诞生"></a>webdriver的诞生</h3><p>2006年一个来至Google的工程师‘Simon Stewart’做了一个叫着‘webdriver’的项目，这个项目可以直接让测试工具调用浏览器本身提供的内置方法、以此来操作浏览器；</p>
-<p>‘webdriver’提供了完全另外的一种方式与浏览器交互。那就是利用浏览器原生的API，封装成一套WebDriver API，直接操作浏览器页面里的元素，甚至操作浏览器本身（截图，窗口大小，启动，关闭）。由于使用的是浏览器原生的API，速度大大提高，而且调用的稳定性交给了浏览器厂商本身，显然是更加科学。然而带来的一些副作用就是，不同的浏览器厂商，对Web元素的操作和呈现多少会有一些差异，这就直接导致了WebDriver要分浏览器厂商不同，而提供不同的实现。例如Firefox就有专门的FirefoxDriver，Chrome就有专门的ChromeDriver等等</p>
-<p>从‘webdriver’诞生之日就和‘Selenium’是竞争对手的关系；</p>
-<h3 id="Selenium-WebDriver的诞生"><a href="#Selenium-WebDriver的诞生" class="headerlink" title="Selenium WebDriver的诞生"></a>Selenium WebDriver的诞生</h3><p>2008年‘Selenium1’和‘webdriver’2个项目进行了合并、就出现了我们大部分人见到的‘Selenium webdriver’(简称WebDriver)。<br>Selenium2 = Selenium + webdriver</p>
-<p>Selenium2是selenium1的升级版本；向下兼容Selenium的所有功能、同时提供WebDriver的API来操作浏览器。</p>
-<h3 id="Selenium3的出现"><a href="#Selenium3的出现" class="headerlink" title="Selenium3的出现"></a>Selenium3的出现</h3><p>2016年Selenium3诞生、Selenium 团队13年就放出风声要发布selenium3.0版本、直到2016年Selenium beta版本才发布。</p>
-<ul>
-<li>Selenium3去掉了RC的支持</li>
-<li>全面支持Java 8</li>
-<li>支持macOS下的safari浏览器、并且apple官方提供‘safaridriver’</li>
-<li>支持Edge浏览器、MS官方提供‘Microsoft WebDriver’的官方版本</li>
-<li>支持Mozilla官方提供的‘geckodriver’来支持firefox浏览器</li>
-</ul>
-<p>可以看到加上Chrome的原生支持、现在主流浏览器厂商都单独为Selenium3出了官方Driver版本、也就意味着这些浏览器厂商已经认可了Selenium在WEB自动化方面的地位；<br>如果你想学习WEB自动化方面的技能、那么Selenium可能是绕不过去的了。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2017/12/26/selenium-past-and-present/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1466,7 +1105,7 @@ test runner
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1499,7 +1138,7 @@ test runner
   </span>
   <span class="author" itemprop="copyrightHolder">Huaisha1224</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
         
@@ -1525,7 +1164,7 @@ test runner
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/pisces.js"></script>
+<script src="/js/schemes/muse.js"></script>
 
 
 <script src="/js/next-boot.js"></script>

@@ -17,22 +17,25 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"huaisha1224.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"huaisha1224.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="高性能Ping工具  fping是一个小型命令行工具，用于向网络主机发送ICMP （ Internet控制消息协议 ）回应请求，类似于ping，但在ping多个主机时性能要高得多。fping完全不同于ping，因为您可以在命令行上定义任意数量的主机，或者指定包含要ping的IP地址或主机列表的文件。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://huaisha1224.github.io/2021/07/15/hello-world/index.html">
+<meta property="og:title" content="Fping 高性能Ping工具">
+<meta property="og:url" content="http://huaisha1224.github.io/2021/07/16/Fping/index.html">
 <meta property="og:site_name" content="Smart Testing">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="高性能Ping工具  fping是一个小型命令行工具，用于向网络主机发送ICMP （ Internet控制消息协议 ）回应请求，类似于ping，但在ping多个主机时性能要高得多。fping完全不同于ping，因为您可以在命令行上定义任意数量的主机，或者指定包含要ping的IP地址或主机列表的文件。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-07-15T13:39:53.500Z">
-<meta property="article:modified_time" content="2021-07-15T13:39:53.500Z">
+<meta property="article:published_time" content="2021-07-16T03:22:56.000Z">
+<meta property="article:modified_time" content="2021-07-16T03:47:09.423Z">
 <meta property="article:author" content="Huaisha1224">
+<meta property="article:tag" content="Fping">
+<meta property="article:tag" content="ping">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://huaisha1224.github.io/2021/07/15/hello-world/">
+<link rel="canonical" href="http://huaisha1224.github.io/2021/07/16/Fping/">
 
 
 <script id="page-configurations">
@@ -45,7 +48,7 @@
   };
 </script>
 
-  <title>Hello World | Smart Testing</title>
+  <title>Fping 高性能Ping工具 | Smart Testing</title>
   
 
 
@@ -137,11 +140,6 @@
     <a href="/archives/" rel="section"><i class="archive //归档 fa-fw"></i>归档</a>
 
   </li>
-        <li class="menu-item menu-item-sitemap">
-
-    <a href="/sitemap.xml" rel="section"><i class="sitemap   //站点地图 fa-fw"></i>站点地图</a>
-
-  </li>
   </ul>
 </nav>
 
@@ -170,7 +168,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2021/07/15/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2021/07/16/Fping/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -183,7 +181,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          Fping 高性能Ping工具
         </h1>
 
         <div class="post-meta">
@@ -192,8 +190,18 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-07-15 21:39:53" itemprop="dateCreated datePublished" datetime="2021-07-15T21:39:53+08:00">2021-07-15</time>
+              <time title="创建时间：2021-07-16 11:22:56 / 修改时间：11:47:09" itemprop="dateCreated datePublished" datetime="2021-07-16T11:22:56+08:00">2021-07-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Sysinternals/" itemprop="url" rel="index"><span itemprop="name">Sysinternals</span></a>
+                </span>
             </span>
 
           
@@ -207,19 +215,45 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <p>高性能Ping工具</p>
+<blockquote>
+<p>fping是一个小型命令行工具，用于向网络主机发送ICMP （ Internet控制消息协议 ）回应请求，类似于ping，但在ping多个主机时性能要高得多。<br>fping完全不同于ping，因为您可以在命令行上定义任意数量的主机，或者指定包含要ping的IP地址或主机列表的文件。</p>
+</blockquote>
+<span id="more"></span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="安装Fping"><a href="#安装Fping" class="headerlink" title="安装Fping"></a>安装Fping</h3><pre><code>yum -y install epel-release
+yum install fping --nogpgcheck
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+编译安装
+yum install gcc
+wget https://fping.org/dist/fping-5.0.tar.gz
+./configure
+make; make install
+</code></pre>
+<h3 id="常用参数"><a href="#常用参数" class="headerlink" title="常用参数"></a>常用参数</h3><pre><code>-b -- ping 数据包的大小。（默认为56 bytes)
+-p -- 间隔时间、默认是1000毫秒、最小值10毫秒
+-s -- 汇总显示结果
+-D -- 输出Linux时间戳
+-a -- 显示存活的主机
+-c -- ping每个目标的次数 (默认为1)
+-f -- 从文件获取目标列表(不能与 -g 同时使用)
+-l -- 循环发送ping
+-g -- 通过指定开始和结束地址来生成目标列表,可以使网段
+-u -- 显示不可到达的目标
+</code></pre>
+<h3 id="一些实例"><a href="#一些实例" class="headerlink" title="一些实例"></a>一些实例</h3><h4 id="ping-一批ip地址"><a href="#ping-一批ip地址" class="headerlink" title="ping 一批ip地址"></a>ping 一批ip地址</h4><pre><code>fping 192.168.104.11 192.168.104.15 192.168.104.111
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+192.168.104.11 is alive
+192.168.104.15 is alive
+192.168.104.111 is unreachable
+</code></pre>
+<h4 id="ping整个网段"><a href="#ping整个网段" class="headerlink" title="ping整个网段"></a>ping整个网段</h4><pre><code>fping -g 192.168.104.0/24
+192.168.104.1 is alive
+192.168.104.103 is alive
+...
+192.168.104.253 is unreachable
+192.168.104.254 is is alive
+</code></pre>
 
     </div>
 
@@ -228,6 +262,11 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Fping/" rel="tag"># Fping</a>
+              <a href="/tags/ping/" rel="tag"># ping</a>
+              <a href="/tags/Linux/" rel="tag"># Linux</a>
+          </div>
 
         
 
@@ -297,7 +336,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Fping"><span class="nav-number">1.</span> <span class="nav-text">安装Fping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%8F%82%E6%95%B0"><span class="nav-number">2.</span> <span class="nav-text">常用参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%AE%9E%E4%BE%8B"><span class="nav-number">3.</span> <span class="nav-text">一些实例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ping-%E4%B8%80%E6%89%B9ip%E5%9C%B0%E5%9D%80"><span class="nav-number">3.1.</span> <span class="nav-text">ping 一批ip地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ping%E6%95%B4%E4%B8%AA%E7%BD%91%E6%AE%B5"><span class="nav-number">3.2.</span> <span class="nav-text">ping整个网段</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -324,7 +363,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -357,7 +396,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Huaisha1224</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
         
@@ -383,7 +422,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/pisces.js"></script>
+<script src="/js/schemes/muse.js"></script>
 
 
 <script src="/js/next-boot.js"></script>

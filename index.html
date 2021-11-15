@@ -162,6 +162,93 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2021/11/15/Iptables%E8%AF%A6%E8%A7%A3-%E5%BF%AB%E9%80%9F%E4%BB%8E%E7%90%86%E8%AE%BA%E5%88%B0%E5%AE%9E%E8%B7%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Huaisha1224">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smart Testing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/11/15/Iptables%E8%AF%A6%E8%A7%A3-%E5%BF%AB%E9%80%9F%E4%BB%8E%E7%90%86%E8%AE%BA%E5%88%B0%E5%AE%9E%E8%B7%B5/" class="post-title-link" itemprop="url">Iptables详解-快速从理论到实践</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-11-15 18:49:41 / 修改时间：15:50:24" itemprop="dateCreated datePublished" datetime="2021-11-15T18:49:41+08:00">2021-11-15</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本篇文章整理了 Iptables 的基本概念及入门知识，旨在帮助大家快速了解和使用 iptables。</p>
+<h2 id="1-什么是Iptables"><a href="#1-什么是Iptables" class="headerlink" title="1 什么是Iptables"></a>1 什么是Iptables</h2><h3 id="认识Netfilter"><a href="#认识Netfilter" class="headerlink" title="认识Netfilter"></a>认识Netfilter</h3><pre><code>在讲Iptables之前我们必须要先认识一下Netfilter；
+</code></pre>
+<blockquote>
+<p>Netfilter是由Rusty Russell提出的Linux 2.4内核防火墙框架，该框架既简洁又灵活，<br>    可实现安全策略应用中的许多功能，如数据包过滤、数据包处理、地址伪装、透明代理、动态网络地址转换(Network Address Translation，NAT)，以及基于用户及媒体访问控制(Media Access Control，MAC)地址的过滤和基于状态的过滤、包速率限制等。</p>
+</blockquote>
+<p>Netfilter是Linux操作系统核心层内部的一个数据包处理模块，它具有如下功能：</p>
+<pre><code>​- 网络地址转换(Network Address Translate)
+- 数据包内容修改
+- 数据包过滤防火墙
+</code></pre>
+<p>　Netfilter 平台中制定了数据包的五个挂载点，这5个挂载点分别是<code>PRE_ROUTING</code>、<code>INPUT</code>、<code>OUTPUT</code>、<code>FORWARD</code>、<code>POST_ROUTING</code></p>
+<p>Netfilter 所设置的规则是存放在内核内存中的，通过 Netfilter 放出的接口来对存放在内核内存中的 XXtables（Netfilter的配置表）进行修改。这个XXtables由表tables，链chains，规则rules组成。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/11/15/Iptables%E8%AF%A6%E8%A7%A3-%E5%BF%AB%E9%80%9F%E4%BB%8E%E7%90%86%E8%AE%BA%E5%88%B0%E5%AE%9E%E8%B7%B5/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2021/10/18/Centos-8%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AENFS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -950,90 +1037,6 @@ CentOS Linux release 8.0.1905 (Core)
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2019/04/27/Selenium-Chromium/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Huaisha1224">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Smart Testing">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/04/27/Selenium-Chromium/" class="post-title-link" itemprop="url">Selenium启动Chromium换皮浏览器</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-04-27 15:55:26" itemprop="dateCreated datePublished" datetime="2019-04-27T15:55:26+08:00">2019-04-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-15 23:04:59" itemprop="dateModified" datetime="2021-07-15T23:04:59+08:00">2021-07-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Selenium/" itemprop="url" rel="index"><span itemprop="name">Selenium</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>最近在用selenium做自动化测试的时候、由于需要测试Chromium换皮浏览器(类似360极速浏览器/QQ浏览器)这种。</p>
-<h3 id="话比较多"><a href="#话比较多" class="headerlink" title="话比较多"></a>话比较多</h3><p>我们都知道Selenium支持Chrome浏览器、而Chrome又是通过Chromium开源项目的商业版本；<br>所以Selenium肯定是支持Chromium浏览器的；<br>好了、我这次要测试的浏览器是用Chromium开源代码、重新换了皮肤的版本；就和360浏览器QQ浏览器一样一样的；</p>
-<p>所以Selenium肯定也是支持所有基于Chromium衍生来的浏览器版本的。</p>
-<p>我的推理就到这里结束了；</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/04/27/Selenium-Chromium/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1103,7 +1106,7 @@ CentOS Linux release 8.0.1905 (Core)
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-count">25</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1116,7 +1119,7 @@ CentOS Linux release 8.0.1905 (Core)
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">34</span>
+        <span class="site-state-item-count">35</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

@@ -162,6 +162,84 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2021/11/23/Iptables%E6%89%A9%E5%B1%95%E6%A8%A1%E5%9D%97%E8%AE%A9%E4%BD%A0%E5%A6%82%E8%99%8E%E6%B7%BB%E7%BF%BC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Huaisha1224">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smart Testing">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/11/23/Iptables%E6%89%A9%E5%B1%95%E6%A8%A1%E5%9D%97%E8%AE%A9%E4%BD%A0%E5%A6%82%E8%99%8E%E6%B7%BB%E7%BF%BC/" class="post-title-link" itemprop="url">Iptables详解-扩展模块速成</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-11-23 18:20:41 / 修改时间：14:44:32" itemprop="dateCreated datePublished" datetime="2021-11-23T18:20:41+08:00">2021-11-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="扩展模块"><a href="#扩展模块" class="headerlink" title="扩展模块"></a>扩展模块</h1><p>我们知道，httpd服务的默认端口为80，当我们使用curl或者浏览器访问主机时，默认会连接服务端的80端口，假设，我们现在想要使用iptables设置一条规则，拒绝来自192.168.1.100的访问请求，我们就可以拒绝100上的报文能够发往本机的80号端口，这个时候，就需要用到”目标端口”选项。</p>
+<h2 id="tcp扩展模块"><a href="#tcp扩展模块" class="headerlink" title="tcp扩展模块"></a>tcp扩展模块</h2><p>常用的扩展匹配条件如下：</p>
+<p>-p tcp -m tcp –sport 用于匹配tcp协议报文的源端口，可以使用冒号指定一个连续的端口范围</p>
+<p>-p tcp -m tcp –dport 用于匹配tcp协议报文的目标端口，可以使用冒号指定一个连续的端口范围</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/11/23/Iptables%E6%89%A9%E5%B1%95%E6%A8%A1%E5%9D%97%E8%AE%A9%E4%BD%A0%E5%A6%82%E8%99%8E%E6%B7%BB%E7%BF%BC/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2021/11/15/Iptables%E8%AF%A6%E8%A7%A3-%E5%BF%AB%E9%80%9F%E4%BB%8E%E7%90%86%E8%AE%BA%E5%88%B0%E5%AE%9E%E8%B7%B5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -185,10 +263,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-11-15 18:49:41 / 修改时间：17:42:47" itemprop="dateCreated datePublished" datetime="2021-11-15T18:49:41+08:00">2021-11-15</time>
+              <time title="创建时间：2021-11-15 18:49:41" itemprop="dateCreated datePublished" datetime="2021-11-15T18:49:41+08:00">2021-11-15</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-11-23 14:37:55" itemprop="dateModified" datetime="2021-11-23T14:37:55+08:00">2021-11-23</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -952,91 +1036,6 @@ CentOS Linux release 8.0.1905 (Core)
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://huaisha1224.github.io/2019/06/04/Selenium-IDE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Huaisha1224">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Smart Testing">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/06/04/Selenium-IDE/" class="post-title-link" itemprop="url">Selenium IDE完整功能操作指引</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-06-04 19:01:25" itemprop="dateCreated datePublished" datetime="2019-06-04T19:01:25+08:00">2019-06-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-15 23:05:06" itemprop="dateModified" datetime="2021-07-15T23:05:06+08:00">2021-07-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Selenium/" itemprop="url" rel="index"><span itemprop="name">Selenium</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="Selenium-IDE简介"><a href="#Selenium-IDE简介" class="headerlink" title="Selenium IDE简介"></a>Selenium IDE简介</h3><p>我在另外的文章里面有写到过Selenium的前世今生；介绍了Selenium项目的发展历程；</p>
-<p>selenium 1.0包括：selenium IDE、selenium Grid、selenium RC这三部分<br>Selenium IDE其实是Selenium1的产物、仅支持Firefox浏览器。</p>
-<p>在Selenium2时代、Selenium IDE基本上都没有更新；</p>
-<p>虽然Selenium2已经可以接入robot framework、可以在Airtest中使用；但是还是有很多初入自动化的同学想用selenium IDE来实现一些简单的自动化操作；</p>
-<p>所以在2018年8月份的时候、Selenium项目组重新开始维护Selenium IDE版本、并且支持Chrome和Firefox浏览器</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/06/04/Selenium-IDE/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1106,7 +1105,7 @@ CentOS Linux release 8.0.1905 (Core)
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-count">26</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
